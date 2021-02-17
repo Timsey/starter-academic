@@ -1,74 +1,43 @@
 ---
-# Display name
 title: Tim Bakker
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position/tagline
 role: PhD researcher in Machine Learning
-
-# Organizations/Affiliations to show in About widget
+bio: My research interests include active learning, reinforcement learning, and
+  everything Bayesian.
+interests: []
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: /#contact
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/timbbakker
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.nl/citations?user=R5tE454AAAAJ&hl=en
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/Timsey
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/tim-bakker-42b6b25b/
+  - icon: cv
+    icon_pack: ai
+    link: media/resume.pdf
 organizations:
-- name: AMLab, University of Amsterdam
-  url: https://amlab.science.uva.nl
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include active learning, reinforcement learning, and everything Bayesian.
-
-# Interests to show in About widget
-interests:
- - Artificial Intelligence
-# - Computational Linguistics
-# - Information Retrieval
-
-# Education to show in About widget
+  - name: AMLab, University of Amsterdam
+    url: https://amlab.science.uva.nl
 education:
   courses:
-  - course: MSc in Theoretical Physics
-    institution: University of Amsterdam
-    year: 2016
-  - course: BSc in Physics and Astronomy
-    institution: University of Amsterdam
-    year: 2014
-
-# Social/Academic Networking
-# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
-social:
-- icon: envelope
-  icon_pack: fas
-  link: '/#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/timbbakker
-- icon: google-scholar  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: ai
-  link: https://scholar.google.nl/citations?user=R5tE454AAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/Timsey
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/tim-bakker-42b6b25b/
-
-# Link to a PDF of your resume/CV.
-# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
-# and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: media/resume.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+    - course: MSc in Theoretical Physics
+      institution: University of Amsterdam
+      year: 2016
+    - course: BSc in Physics and Astronomy
+      institution: University of Amsterdam
+      year: 2014
 email: ""
-
-# Highlight the author in author lists? (true/false)
+superuser: true
 highlight_name: false
 ---
+Currently, I am a second year PhD student at the \[Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with \[Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling(https://staff.fnwi.uva.nl/m.welling/). My research focuses on active learning and reinforcement learning.
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
