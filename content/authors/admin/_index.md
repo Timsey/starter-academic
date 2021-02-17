@@ -18,8 +18,7 @@ bio: My research interests include active learning, reinforcement learning, and 
 
 # Interests to show in About widget
 interests:
-[]
-# - Artificial Intelligence
+ - Artificial Intelligence
 # - Computational Linguistics
 # - Information Retrieval
 
