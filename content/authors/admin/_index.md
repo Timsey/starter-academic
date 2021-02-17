@@ -38,6 +38,6 @@ email: ""
 superuser: true
 highlight_name: false
 ---
-Currently, I am a second year PhD student at the \[Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with \[Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling(https://staff.fnwi.uva.nl/m.welling/). My research focuses on active learning and reinforcement learning.
+Currently, I am a second year PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research focuses on active learning and reinforcement learning.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
