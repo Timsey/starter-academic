@@ -48,13 +48,13 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://papers.nips.cc/paper/2020/file/daed210307f1dbc6f1dd9551408d999f-Paper.pdf'
+url_pdf: 'https://proceedings.neurips.cc/paper/2020/hash/daed210307f1dbc6f1dd9551408d999f-Abstract.html'
 url_code: 'https://github.com/Timsey/pg_mri'
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: 'https://videos.neurips.cc/search/experimental%20design/video/slideslive-38938021'
-url_source: 'https://proceedings.neurips.cc/paper/2020/hash/daed210307f1dbc6f1dd9551408d999f-Abstract.html'
+url_source: ''
 url_video: 'https://videos.neurips.cc/search/experimental%20design/video/slideslive-38938021'
 
 # Featured image
