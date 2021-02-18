@@ -9,10 +9,10 @@ active: false
 headless: true
 
 # Order that this section appears on the page.
-weight: 50
+weight: 57
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Accomplish&shy;ments'
+title: 'Courses'
 subtitle:
 
 # Date format

@@ -12,13 +12,13 @@ design:
 ---
 
 ### **Master AI projects**
-  - 2020-2021**: Uncertainty-diversity trade-offs in deep active learning [preliminary title], *András Csirik*.
-  - 2020-2021: Smart traffic lights in Amsterdam [preliminary title], *Sierk Kanis*.
-  - 2019-2020: Contrastively-shaped reward signals for curiosity-based exploration tasks, *Nil Stolt Anso*.
+  - **2020-2021**: Uncertainty-diversity trade-offs in deep active learning [preliminary title], *András Csirik*.
+  - **2020-2021**: Smart traffic lights in Amsterdam [preliminary title], *Sierk Kanis*.
+  - **2019-2020**: Contrastively-shaped reward signals for curiosity-based exploration tasks, *Nil Stolt Anso*.
 
 ### **Bachelor AI projects**
-  - 2019-2020: Forecasting shipped orders with long short-term memory recurrent neural networks, *Roel van der Burght*.
+  - **2019-2020**: Forecasting shipped orders with long short-term memory recurrent neural networks, *Roel van der Burght*.
   
 ### **External projects**
-  - 2019-2020: Bayesian Convolutional Neural Networks for Learning Ground State Energies from a Simple Harmonic Potential Well, *Chase van de Geijn*.
+  - **2019-2020**: Bayesian Convolutional Neural Networks for Learning Ground State Energies from a Simple Harmonic Potential Well, *Chase van de Geijn*.
 
