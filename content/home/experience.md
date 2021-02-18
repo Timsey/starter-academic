@@ -37,7 +37,7 @@ experience:
     location: Amsterdam
     date_start: '2017-09-01'
     date_end: '2019-02-01'
-   description: Engineer and consultant on a variety to topics from object detection to NLP.
+    description: Engineer and consultant on a variety to topics from object detection to NLP.
     
 #    description: |2-
 #    Responsibilities include:
