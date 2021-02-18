@@ -11,11 +11,13 @@ weight: 40
 
 title: 'Teaching'
 
-experience:
-  - title: Reinforcement Learning 2020
-    description: aaa
+- title: Reinforcement Learning 2020
+  description: aaa
     
-  - title: Reinforcement Learning 2019
-    description: bbb
+- title: Reinforcement Learning 2019
+  description: bbb
+    
+- title: Leren (Introduction Machine Learning) 2019
+  description: ccc
 
 ---
