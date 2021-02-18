@@ -17,8 +17,8 @@ summary: Amsterdam Machine Learning lab seminar on NeurIPS 2020 Spotlight paper.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2020-11-05"
-#date_end: "2030-06-01T15:00:00Z"
+date: "2020-11-05T16:00:00Z"
+date_end: "2020-11-05T17:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
