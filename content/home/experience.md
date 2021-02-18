@@ -28,7 +28,7 @@ experience:
     location: Amsterdam
     date_start: '2019-03-01'
     date_end: ''
-#    description: Taught electronic engineering and researched semiconductor physics.
+#    description: Researching reinforcement learning methods for active learning and active sensing.
         
   - title: Machine Learning Engineer
     company: BrainCreators
@@ -36,7 +36,7 @@ experience:
     location: Amsterdam
     date_start: '2017-09-01'
     date_end: '2019-02-01'
-#    description: Taught electronic engineering and researched semiconductor physics.
+#    description: Engineer and consultant on a variety to topics from object detection to NLP.
     
 #    description: |2-
 #    Responsibilities include:
