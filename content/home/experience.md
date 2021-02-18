@@ -3,6 +3,8 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: experience
 
+active: true
+
 # This file represents a page section.
 headless: true
 
@@ -28,15 +30,14 @@ experience:
     location: Amsterdam
     date_start: '2019-03-01'
     date_end: ''
-#    description: Researching reinforcement learning methods for active learning and active sensing.
-        
+    description: Researching reinforcement learning methods for active learning and active sensing.
   - title: Machine Learning Engineer
     company: BrainCreators
     company_url: 'https://www.braincreators.com'
     location: Amsterdam
     date_start: '2017-09-01'
     date_end: '2019-02-01'
-#    description: Engineer and consultant on a variety to topics from object detection to NLP.
+   description: Engineer and consultant on a variety to topics from object detection to NLP.
     
 #    description: |2-
 #    Responsibilities include:
