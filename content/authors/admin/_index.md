@@ -4,7 +4,7 @@ role: PhD researcher in Machine Learning
 bio: My research interests include active learning/sensing, reinforcement learning, and
   everything Bayesian.
 interests: 
-  - Machine Learning
+  - Machine learning
   - Reinforcement learning
   - Bayesian probability theory
 social:
