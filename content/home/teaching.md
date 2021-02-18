@@ -4,8 +4,11 @@ headless: true
 active: true
 
 design:
-  columns: '1'
-  
+  columns: '2'
+
+# Order that this section appears on the page.
+weight: 40
+
 title: Teaching
 
 ---
