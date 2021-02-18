@@ -43,10 +43,10 @@
   url = "#experience"
   weight = 55
 
-[[main]]
-  name = "Certificates"
-  url = "#certificates"
-  weight = 57
+#[[main]]
+#  name = "Certificates"
+#  url = "#certificates"
+#  weight = 57
 
 [[main]]
   name = "Organiser"
