@@ -1,16 +1,16 @@
 ---
 title: Tim Bakker
 role: PhD researcher in Machine Learning
-bio: My research interests include active learning, reinforcement learning, and
+bio: My research interests include active learning/sensing, reinforcement learning, and
   everything Bayesian.
-interests: []
+interests: 
+  - Machine Learning
+  - Reinforcement learning
+  - Bayesian probability theory
 social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/timbbakker
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.nl/citations?user=R5tE454AAAAJ&hl=en
@@ -20,11 +20,14 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/tim-bakker-42b6b25b/
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/timbbakker
   - icon: cv
     icon_pack: ai
     link: media/resume.pdf
 organizations:
-  - name: AMLab, University of Amsterdam
+  - name: University of Amsterdam
     url: https://amlab.science.uva.nl
 education:
   courses:
@@ -34,7 +37,7 @@ education:
     - course: BSc in Physics and Astronomy
       institution: University of Amsterdam
       year: 2014
-email: ""
+email: "t.b.bakker@uva.nl"
 superuser: true
 highlight_name: false
 ---
