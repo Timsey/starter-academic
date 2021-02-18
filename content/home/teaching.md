@@ -11,7 +11,7 @@ weight: 40
 
 title: 'Teaching'
 
-content:
+experience:
   - title: Reinforcement Learning 2020
     description: aaa
     
