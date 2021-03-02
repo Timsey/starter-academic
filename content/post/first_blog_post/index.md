@@ -3,7 +3,7 @@ title: Test blog title
 subtitle: Test blog subtitle
 date: 2021-03-02T14:46:05.344Z
 summary: Test blog summary.
-draft: true
+draft: false
 featured: false
 
 authors:
@@ -21,3 +21,5 @@ image:
   alt_text: Screen reader description
 ---
 Test blog text.
+
+LaTeX test: $a = int_x^\inf x dx \mathbb{E}$.
