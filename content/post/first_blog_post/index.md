@@ -20,6 +20,71 @@ image:
   caption: Featured image
   alt_text: Screen reader description
 ---
-Test blog text.
 
-LaTeX test: $a = int_x^\inf x dx \mathbb{E}$.
+## On Bayes
+
+The tagline of one of my favourite blogs - [Astral Codex Ten](https://astralcodexten.substack.com), previously [Slate Star Codex](https://slatestarcodex.com) - reads:
+> P(A|B) = [P(A)*P(B|A)]/P(B), *all the rest is commentary*.
+  
+This formula, more legibly written $p(A|B) = \frac{p(A) p(B|A)}{p(B)}$, is known as Bayes' theorem. Writing the theorem down is very easy, and proving it is not much harder - it's a direct consequence of the [product rule of probability theory](https://en.wikipedia.org/wiki/Chain_rule_(probability)). As early as the 18th century it was used by its namesake Reverend Thomas Bayes to solve a[ simple statistics problem](https://www.lesswrong.com/posts/RTt59BtFLqQbsSiqd/a-history-of-bayes-theorem). Really, it doesn't sound that special. So what's with this assertion that *all the rest is commentary*?  
+ 
+  ### Representing beliefs
+To understand that, we have to take a closer look at probability theory, and in particular at the many different interpretations of probability itself. At the risk of simplifying an [age-old debate](https://en.wikipedia.org/wiki/Foundations_of_statistics), there are two widely held views on this matter: the frequentist view, and the Bayesian view.   
+  
+The frequentist views probabilities as *limiting frequencies*: if a coin has a probability of 0.5 to land heads, then this is a statement about what happens if the coin is flipped a large number of times - the frequentist expects to see heads half the time. This is the view that is typically taught, and it works very well when the objects of study are those that have limiting frequencies we can sensibly talk about.   
+  
+The Bayesian views probabilities as *representations of knowledge*: if a coin has a probability of 0.5 to land heads, then this is a statement about the Bayesian's belief or knowledge of this coin. The Bayesian too expects to see heads half the time if the coin is flipped a large number of times, but - in contrast to the frequentist - can also make probabilistic statements about events that do not have natural limiting frequencies (e.g. 'what is the probability that there is other intelligent life in our galaxy?').  
+  
+Now note that a Bayesian who is really good at flipping coins, might be able to make the coin come up heads more often, e.g. 80% of times. If we learned this, we would assign a probability of 0.8 to the coin coming up heads - rather than 0.5 - without having seen any of the coin flips: our information has changed our probability assignment. This gives us some indication that we're reasoning as Bayesians in our daily lives (this indication might be [deeper](https://slatestarcodex.com/2017/09/05/book-review-surfing-uncertainty/) [than](https://slatestarcodex.com/2017/09/06/predictive-processing-and-perceptual-control/) [expected](https://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy/)).  
+  
+  ### Plausible inference
+We can take this further, and imagine designing a robot that flips coins such that they always come up heads. Hypothetically, we would have to take many factors into account for this: the mass of the coin, the force with which the robot flips, the density of air (or perhaps the positions and velocities of individual molecules), the elasticity of the surface the coin lands on, etc. If we manage to do so, we've now created a robot that flips a coin such that it deterministically lands heads: we no longer need probabilities to describe our state of knowledge about the coin.  
+  
+This makes sense in the Bayesian framework, since probabilities were never meant to represent 'randomness' in a system: it was already about our state of knowledge. In the Bayesian framework, probabilities arise due to a lack of complete information about a system: if we had complete information of the factors influencing the coin flip, we could 'simply' calculate the result of the experiment, using the known laws of physics (and if we obtain the wrong result we learn that our information was incomplete, our measurement apparatus is not precise enough, or we're wrong about the laws of physics).
+
+Alright, so the Bayesian framework makes sense if we have complete information: what about if we don't? [Cox's](https://en.wikipedia.org/wiki/Cox%27s_theorem) [theorem](http://www.stats.org.uk/cox-theorems/VanHorn2003.pdf) provides a theoretical justification for ([objective](https://stats.stackexchange.com/questions/381825/objective-vs-subjective-bayesian-paradigms) Bayesian) probability theory as a general theory of plausible inference. This means that we can use Bayesian probability theory to reason under incomplete information, exactly as suggested by referring to probabilities as representations of knowledge. Bayes' theorem tells us how to do inference correctly and consistently: *all the rest is commentary*.
+
+This point is belaboured by E.T. Jaynes, who advocates a theory of [probability theory as extended logic](http://www.med.mcgill.ca/epidemiology/hanley/bios601/GaussianModel/JaynesProbabilityTheory.pdf)  (i.e. extending logical deduction to reasoning under uncertainty). Full disclosure: I am quite partial to this interpretation.
+
+### Back to the theorem
+By this point one might wonder: if Bayesian probability theory tells us exactly how to do inference correctly, why use other methods at all? Well, the facetious answer is that we don't: it is after all a widely known and indesputable fact that [all inference methods are special cases of Bayesian inference](https://www.inference.vc/everything-that-works-works-because-its-bayesian-2/).
+
+The more reasonable answer is that true Bayesian inference is really hard, and actually kind of impossible in practice. Let's return to the theorem to see why.
+
+The statement $p(A|B) = \frac{p(A) \, p(B|A)}{p(B)}$ encodes the following intuition: *updated belief = prior belief + new information*. If I start out believing a coin is fair, and then I observe a very unlikely string of 20 heads in a row, I am going to no longer believe the coin is fair. And the magic: Bayes' theorem tells me exactly how much I should no longer believe that.
+
+Bayesians call the updated belief the *posterior*, the prior belief the *prior*, and the new information the *likelihood*. And of course, the next time you do inference, your previous posterior is your current prior.
+
+With this, we identify $p(A)$ as the prior belief that $A$ is true, $p(B|A)$ as the likelihood of observing data $B$ if $A$ is true, and $p(A|B)$ as the posterior belief in $A$ after observing $B$. The denominator $p(B)$ is called the *evidence* for $B$, which is mostly treated as a normalisation factor. Note that by taking the logarithm on both sides, we indeed obtain something of the form: *updated belief = prior belief + new information* (minus a constant term).
+
+To apply the theorem, we need to think about what $A$ and $B$ represent in practice. Typically, we think of $A$ as an hypothesis about the world: e.g. some process that we're trying to describe. The data we observe about this process can be identified with $B$. Let's denote the hypothesis as $\mathcal{H}$ and the data as $\mathcal{D}$, so Bayes' theorem becomes:
+
+$p(\mathcal{H}|\mathcal{D}) = \frac{p(\mathcal{H}) \, p(\mathcal{D}|\mathcal{H})}{p(\mathcal{D})}$.
+
+
+### Prior information
+To start, we need to specify our prior information $p(\mathcal{H})$: how likely do we think $\mathcal{H}$ is a priori (for instance, if $\mathcal{H}$ is the hypothesis that the coin is fair)? Well, this depends on what information we already have about the coin (and the person flipping the coin, and any other relevant information). Probability theory as extended logic prescribes using all the (relevant) available information when doing inferences: if I happen to know the coin has heads on both sides, I should definitely include this information. 
+
+So let's call any relevant information $\mathcal{I}$, and restate Bayes' theorem:
+
+$p(\mathcal{H}|\mathcal{D}, \, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) \, p(\mathcal{D}|\mathcal{H}, \,\mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
+
+Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}$ consistent with our prior information $\mathcal{I}$, observe data $\mathcal{D}$ (e.g. do experiments), compute $p(\mathcal{D}|\mathcal{I})$, and then $p(\mathcal{H}|\mathcal{D}, \, \mathcal{I})$ describes exactly how much we should believe the various hypotheses.
+
+Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) \, p(\mathcal{D}|\mathcal{H}, \,\mathcal{I}) \, d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
+
+If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are their about the coin? To begin with, the coin's bias can take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We can probably bin these hypotheses together though, and for all practical purposes we don't care if the coin has bias 0.50001 or 0.50002. Note that is is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
+
+Alright, so what else should be in our hypothesis space? Maybe the coin has two heads, maybe it lands on its side very often (and we haven't included this in the previous discussion of coin bias!), maybe the coin is fair, but not the person flipping it (an extra term in the hypothesis?), maybe I'm hallucinating and there is no coin. 
+
+Does that last one even count as an hypothesis about the coin? Well, the coin in question is an actual coin in an actual physical world (presumably), not just a mathematical abstraction. We previously discussed how a robot could perhaps deterministically flip a coin, and in any case a Bayesian - equipped with all relevant information - could simply calculate the coin's trajectory and thus the eventual result of the coin flip. This involved all kinds of information about things that are not the coin (e.g. air molecules). 
+
+We could restrict ourselves to just making statements about the coin. All the other factors would influence the coin, but this just adds some uncertainty to our posterior distribution. Maybe the robot always makes the coin come up heads, but once in a while some cosmic radiation flips an important bit in its control system and now the coin comes up tails. This would be confusing, but an hypothesis space that just contains hypotheses for 'coin bias' would deal with this just fine (until we put the robot in a lead(?)-encased room where cosmic radiation has a harder time, though over time it would learn to predict the new result as well).
+
+
+
+There is clearly a tension here between presumably knowing everything and doing deterministically correct predictions, and choosing an hypothesis space that is too limited and leads to lots of uncertainty. The nice part is that in the latter 
+
+
+
+I've also skipped over another hard problem: actually specifying the prior correctly. It's one thing to 'know things about the world with some measure of uncertainty', it's another to translate this into specific priors $p(\mathcal{H}|\mathcal{I})$. 
