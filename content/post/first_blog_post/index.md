@@ -1,6 +1,6 @@
 ---
 title: Everything but commentary
-subtitle: Epistemic status: not always very precise.
+subtitle: Have you heard the good word of our lord and saviour Bayes?
 date: 2021-03-02T14:46:05.344Z
 summary: A look at the objective Bayesian prescription for reasoning under uncertainty.
 draft: false
@@ -20,6 +20,8 @@ image:
   caption: Featured image
   alt_text: Screen reader description
 ---
+
+> *Epistemic status: not always very precise.*
 
 The tagline of one of my favourite blogs - [Astral Codex Ten](https://astralcodexten.substack.com), previously [Slate Star Codex](https://slatestarcodex.com) - reads:
 > P(A|B) = [P(A)*P(B|A)]/P(B), *all the rest is commentary*.
