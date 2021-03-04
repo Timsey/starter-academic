@@ -13,4 +13,4 @@ title: Musical theater
 subtitle:
 ---
 
-{{< theater >}}
+{{< gallery >}}
