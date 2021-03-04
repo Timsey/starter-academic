@@ -1,10 +1,10 @@
 ---
-title: Test blog title
-subtitle: Test blog subtitle
+title: All but commentary
+subtitle: Have you heard the good word of our lord and saviour Bayes?
 date: 2021-03-02T14:46:05.344Z
 summary: Test blog summary.
 draft: false
-featured: false
+featured: true
 
 authors:
   - admin
@@ -20,8 +20,6 @@ image:
   caption: Featured image
   alt_text: Screen reader description
 ---
-
-## On Bayes
 
 The tagline of one of my favourite blogs - [Astral Codex Ten](https://astralcodexten.substack.com), previously [Slate Star Codex](https://slatestarcodex.com) - reads:
 > P(A|B) = [P(A)*P(B|A)]/P(B), *all the rest is commentary*.
@@ -73,18 +71,25 @@ Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}
 
 Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) \, p(\mathcal{D}|\mathcal{H}, \,\mathcal{I}) \, d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
 
+### Commentary part 1
 If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are their about the coin? To begin with, the coin's bias can take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We can probably bin these hypotheses together though, and for all practical purposes we don't care if the coin has bias 0.50001 or 0.50002. Note that is is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
 
-Alright, so what else should be in our hypothesis space? Maybe the coin has two heads, maybe it lands on its side very often (and we haven't included this in the previous discussion of coin bias!), maybe the coin is fair, but not the person flipping it (an extra term in the hypothesis?), maybe I'm hallucinating and there is no coin. 
+Alright, so what else should be in our hypothesis space? Maybe the coin has two heads, maybe it lands on its side very often (we haven't included this in the previous discussion of coin bias!), maybe the coin is fair, but not the person flipping it (an extra entity in the hypothesis?), maybe I'm hallucinating and there is no coin. 
 
-Does that last one even count as an hypothesis about the coin? Well, the coin in question is an actual coin in an actual physical world (presumably), not just a mathematical abstraction. We previously discussed how a robot could perhaps deterministically flip a coin, and in any case a Bayesian - equipped with all relevant information - could simply calculate the coin's trajectory and thus the eventual result of the coin flip. This involved all kinds of information about things that are not the coin (e.g. air molecules). 
+Does that last one even count as an hypothesis about the coin? Well, there are definitely observations imaginable that make such an hypothesis intuitively more likely than most mundane coin-hypotheses: what if the coin changes colour and shape mid-flight? The purpose of inference is to, well, make correct inferences about the world, and this is rather difficult if we don't include the hypothesis describes the world correctly.
 
-We could restrict ourselves to just making statements about the coin. All the other factors would influence the coin, but this just adds some uncertainty to our posterior distribution. Maybe the robot always makes the coin come up heads, but once in a while some cosmic radiation flips an important bit in its control system and now the coin comes up tails. This would be confusing, but an hypothesis space that just contains hypotheses for 'coin bias' would deal with this just fine (until we put the robot in a lead(?)-encased room where cosmic radiation has a harder time, though over time it would learn to predict the new result as well).
+We could restrict ourselves to just making statements about the coin, but ignoring factors does not make them go away. Maybe the robot always makes the coin come up heads, but once in a while some cosmic radiation flips an important bit in its control system and now the coin comes up tails. This would be confusing: an agent with an hypothesis space that just contains hypotheses for 'coin bias' would eventually put a lot of probability mass on high biases for the coin. From the perspective of the agent this is indistinguishable from what is actually happening, so one could be satisfied with this. However, if we now put the robot in a lead(?)-encased room where cosmic radiation has a harder time penetrating, the coin bias changes, and the agent has no idea why (but it will of course dutifully update its posterior to put more probability density around the appropriate coin bias). 
+
+Of course, often we don't care to distinguish between the hypotheses 'this coin has a bias near 1' and 'this coin is being flipped by a robot that is programmed to make it come up heads almost always, such that it appears to have bias near 1'. This is fine: this is an approximation. 
+
+We could even imagine some kind of hierarchical process: we first try to find out how often the coin comes up heads. After many observations our posterior is concentrated around hypotheses with very high bias. Satisfied that we have learned this, we now try to find out any extra details about the coin flipping process, and split our 'high bias' hypothesis into disjunct proposals such as 'there is a robot flipping the coin', 'this is an optical illusion', etc. We now continue observing, paying close attention to any hints that may help us distinguish these. 
+
+But we could have been doing this all along! We could have been keeping track of all these hypotheses from the start, and using any of these 'hints' garnered from the initial round of observations to already start distinguishing these new hypotheses. We've thrown away observational evidence: another approximation.
+
+So yeah, pretty difficult to do this correctly for a coin. Now imagine doing this for anything *interesting*.
 
 
+### Commentary part 2
+And there's more rain on this parade, because I've skipped over another hard problem: actually specifying the prior correctly. It's one thing to 'know things about the world with some measure of uncertainty', it's another to translate this into specific priors $p(\mathcal{H}|\mathcal{I})$. More on this another time.
 
-There is clearly a tension here between presumably knowing everything and doing deterministically correct predictions, and choosing an hypothesis space that is too limited and leads to lots of uncertainty. The nice part is that in the latter 
-
-
-
-I've also skipped over another hard problem: actually specifying the prior correctly. It's one thing to 'know things about the world with some measure of uncertainty', it's another to translate this into specific priors $p(\mathcal{H}|\mathcal{I})$. 
+Objective Bayesian probability theory is a beautifully prescriptive philosophy of reasoning under uncertainty: *all the rest is just commentary.* [Very, very difficult commentary, written in Martian, waiting to devour the unwary.](https://unsongbook.com/chapter-1-dark-satanic-mills/)
