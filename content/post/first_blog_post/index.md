@@ -1,8 +1,8 @@
 ---
-title: All but commentary
+title: All but commentary.
 subtitle: Have you heard the good word of our lord and saviour Bayes?
 date: 2021-03-02T14:46:05.344Z
-summary: Test blog summary.
+summary: A look at the objective Bayesian prescription for reasoning under uncertainty.
 draft: false
 featured: true
 
@@ -49,7 +49,7 @@ By this point one might wonder: if Bayesian probability theory tells us exactly 
 
 The more reasonable answer is that true Bayesian inference is really hard, and actually kind of impossible in practice. Let's return to the theorem to see why.
 
-The statement $p(A|B) = \frac{p(A) \, p(B|A)}{p(B)}$ encodes the following intuition: *updated belief = prior belief + new information*. If I start out believing a coin is fair, and then I observe a very unlikely string of 20 heads in a row, I am going to no longer believe the coin is fair. And the magic: Bayes' theorem tells me exactly how much I should no longer believe that.
+The statement $p(A|B) = \frac{p(A) p(B|A)}{p(B)}$ encodes the following intuition: *updated belief = prior belief + new information*. If I start out believing a coin is fair, and then I observe a very unlikely string of 20 heads in a row, I am going to no longer believe the coin is fair. And the magic: Bayes' theorem tells me exactly how much I should no longer believe that, i.e. how much I should *update* my belief.
 
 Bayesians call the updated belief the *posterior*, the prior belief the *prior*, and the new information the *likelihood*. And of course, the next time you do inference, your previous posterior is your current prior.
 
@@ -57,7 +57,7 @@ With this, we identify $p(A)$ as the prior belief that $A$ is true, $p(B|A)$ as 
 
 To apply the theorem, we need to think about what $A$ and $B$ represent in practice. Typically, we think of $A$ as an hypothesis about the world: e.g. some process that we're trying to describe. The data we observe about this process can be identified with $B$. Let's denote the hypothesis as $\mathcal{H}$ and the data as $\mathcal{D}$, so Bayes' theorem becomes:
 
-$p(\mathcal{H}|\mathcal{D}) = \frac{p(\mathcal{H}) \, p(\mathcal{D}|\mathcal{H})}{p(\mathcal{D})}$.
+$p(\mathcal{H}|\mathcal{D}) = \frac{p(\mathcal{H}) p(\mathcal{D}|\mathcal{H})}{p(\mathcal{D})}$.
 
 
 ### Prior information
@@ -65,11 +65,11 @@ To start, we need to specify our prior information $p(\mathcal{H})$: how likely 
 
 So let's call any relevant information $\mathcal{I}$, and restate Bayes' theorem:
 
-$p(\mathcal{H}|\mathcal{D}, \, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) \, p(\mathcal{D}|\mathcal{H}, \,\mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
+$p(\mathcal{H}|\mathcal{D}, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
 
-Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}$ consistent with our prior information $\mathcal{I}$, observe data $\mathcal{D}$ (e.g. do experiments), compute $p(\mathcal{D}|\mathcal{I})$, and then $p(\mathcal{H}|\mathcal{D}, \, \mathcal{I})$ describes exactly how much we should believe the various hypotheses.
+Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}$ consistent with our prior information $\mathcal{I}$, observe data $\mathcal{D}$ (e.g. do experiments), compute $p(\mathcal{D}|\mathcal{I})$, and then $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$ describes exactly how much we should believe the various hypotheses.
 
-Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) \, p(\mathcal{D}|\mathcal{H}, \,\mathcal{I}) \, d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
+Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I}) d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
 
 ### Commentary part 1
 If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are their about the coin? To begin with, the coin's bias can take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We can probably bin these hypotheses together though, and for all practical purposes we don't care if the coin has bias 0.50001 or 0.50002. Note that is is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
@@ -87,7 +87,6 @@ We could even imagine some kind of hierarchical process: we first try to find ou
 But we could have been doing this all along! We could have been keeping track of all these hypotheses from the start, and using any of these 'hints' garnered from the initial round of observations to already start distinguishing these new hypotheses. We've thrown away observational evidence: another approximation.
 
 So yeah, pretty difficult to do this correctly for a coin. Now imagine doing this for anything *interesting*.
-
 
 ### Commentary part 2
 And there's more rain on this parade, because I've skipped over another hard problem: actually specifying the prior correctly. It's one thing to 'know things about the world with some measure of uncertainty', it's another to translate this into specific priors $p(\mathcal{H}|\mathcal{I})$. More on this another time.
