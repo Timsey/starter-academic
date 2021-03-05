@@ -55,7 +55,7 @@ The statement $p(A|B) = \frac{p(A) p(B|A)}{p(B)}$ encodes the following intuitio
 
 Bayesians call the updated belief the *posterior*, the prior belief the *prior*, and the new information the *likelihood*[^1]. And of course, the next time you do inference, your previous posterior is your current prior.
 
-With this, we identify $p(A)$ as the prior belief that $A$ is true, $p(B|A)$ as the likelihood of observing data $B$ if $A$ is true, and $p(A|B)$ as the posterior belief in $A$ after observing $B$. The denominator $p(B)$ is called the *evidence* for $B$, which is mostly treated as a normalisation factor. Note that by taking the logarithm on both sides, we indeed obtain something of the form: *updated belief = prior belief + new information*.
+With this, we identify $p(A)$ as the prior belief that $A$ is true, $p(B|A)$ as the likelihood of observing data $B$ if $A$ is true, and $p(A|B)$ as the posterior belief in $A$ after observing $B$. The denominator $p(B)$ is called the *evidence*[^2] for $B$, which is mostly treated as a normalisation factor. Note that by taking the logarithm on both sides, we indeed obtain something of the form: *updated belief = prior belief + new information*.
 
 To apply the theorem, we need to think about what $A$ and $B$ represent in practice. Typically, we think of $A$ as an hypothesis about the world: e.g. some process that we're trying to describe. The data we observe about this process can be identified with $B$. Let's denote the hypothesis as $\mathcal{H}$ and the data as $\mathcal{D}$, so Bayes' theorem becomes:
 
@@ -108,3 +108,5 @@ Luckily, it does seem to be the case that the kind of problems we encounter have
 When explicitly reasoning using Bayes' theorem, the trick is then to translate these regularities / this inductive bias / this prior information into actual priors $p(\mathcal{H}|\mathcal{I})$, which is one of hard problems mentioned previously. A nice tidbit is that one of the methods for doing this - [the principle of maximum entropy](https://en.wikipedia.org/wiki/Principle_of_maximum_entropy) - also gives us some results from statistical mechanics for free. More on this - you guessed it - another time.
 
 [^1]: Strictly speaking it might be better to call $\frac{p(B|A)}{p(B)}$ - rather than $p(B|A)$ - the new information, since the logarithm of this is in expectation equal to the mutual information $I(A;B)$ between $A$ and $B$: a measure for how much we learn about $A$ after observing $B$.
+
+[^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 in David MacKay's book *Information Theory, Inference, and Learning Algorithms*), and is very confusing otherwise.
