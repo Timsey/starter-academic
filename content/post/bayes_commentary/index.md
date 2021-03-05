@@ -73,7 +73,7 @@ Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}
 Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I}) d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
 
 ### Commentary part 1
-If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are there about the coin? To begin with, the coin's bias can take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We could bin these hypotheses together, if we - for all practical purposes - don't care whether the coin has bias 0.50001 or 0.50002. Note that this is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
+If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are there about the coin? To begin with, the coin's bias could conceivably take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We could bin these hypotheses together, if we - for all practical purposes - don't care whether the coin has bias 0.50001 or 0.50002. Note that this is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
 
 Alright, so what else should be in our hypothesis space? Maybe the coin has two heads, maybe it lands on its side very often (we haven't included this in the previous discussion of coin bias!), maybe the coin is fair, but not the person flipping it (an extra entity in the hypothesis?), maybe I'm hallucinating and there is no coin. 
 
@@ -93,3 +93,16 @@ So yeah. It's pretty difficult follow the prescribed recipe exactly for a coin. 
 And there's more rain on this parade, because I've skipped over another hard problem: actually specifying the prior correctly. It's one thing to 'know things about the world with some measure of uncertainty', it's another to translate this into specific priors $p(\mathcal{H}|\mathcal{I})$. More on this another time as well.
 
 Objective Bayesian probability theory is a beautifully prescriptive philosophy of reasoning under uncertainty: *all the rest is just commentary.* [Very, very difficult commentary, written in Martian, waiting to devour the unwary.](https://unsongbook.com/chapter-1-dark-satanic-mills/)
+
+### Turtles all the way down
+> Epistemic status: pattern matching.
+
+Say we have some prior information $\mathcal{I}$ about, say, physics that constrains the possible outcomes of our coin flips. Perhaps we believe ourselves to be the aforementioned Bayesian with access to all relevant knowledge, and we aim to simply calculate the result deterministically. How certain are we of this? 
+
+Presumably we used Bayesian updating to get there, so our certainty in the certainty-hypothesis $\mathcal{H}$ is measured by our current (at time $t$) prior $p(\mathcal{H}|\mathcal{I}_t)$, which is equivalent to a posterior $p(\mathcal{H}|\mathcal{D}, \mathcal{I}_{t-1})$ from the previous time we updated on some relevant data $\mathcal{D}$, with our previous prior knowledge $\mathcal{I}_{t-1}$ at time $t-1$. And this previous prior is the result of another update step at time $t-2$ with the prior knowledge we had then, etc.
+
+It's Bayesian updates all the way down! Our belief in anything - Bayes says - is the result of continuously updating on observational data, given some prior information. So what happens if we follow this train of thought all the way to where we had no prior information? Well, this to me seems to be the [Problem of Induction](https://plato.stanford.edu/entries/induction-problem/). If we have no prior information about anything, how do we know what inferences to make? We don't! This is also closely related to the [no free lunch theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem), which states that averaged across all possible problems, any two optimisation algorithms (read: learning) will perform equivalently. If there is no prior information on the kinds of problems we expect to encounter, then we're stuck. [There is no learning without inductive bias](https://www.lesswrong.com/posts/H59YqogX94z5jb8xx/inductive-bias).
+
+Luckily, it does seem to be the case that the kind of problems we encounter have some kind of regularity to them, and evolution seems to have outfitted our brains with somewhat decent inductive biases for learning these regularities. See also [Occam's Razor](https://www.lesswrong.com/posts/f4txACqDWithRi7hs/occam-s-razor).
+
+
