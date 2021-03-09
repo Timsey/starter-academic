@@ -21,7 +21,7 @@ image:
   alt_text: Screen reader description
 ---
 
-> *Epistemic status: not always very precise.*
+> *Epistemic status: not always very precise. The purpose of this blog post is to introduce the many sides of Bayesian probability theory that I have come across over the past few years. I used to be quite confused about this topic, and I feel less confused now, so hopefully this will be helpful to someone. I intend to expand on some of these topics in future posts.*
 
 The tagline of one of my favourite blogs - [Astral Codex Ten](https://astralcodexten.substack.com), previously [Slate Star Codex](https://slatestarcodex.com) - reads:
 > P(A|B) = [P(A)*P(B|A)]/P(B), *all the rest is commentary*.
@@ -61,8 +61,10 @@ To apply the theorem, we need to think about what $A$ and $B$ represent in pract
 
 $p(\mathcal{H}|\mathcal{D}) = \frac{p(\mathcal{H}) p(\mathcal{D}|\mathcal{H})}{p(\mathcal{D})}$.
 
+We can now sensibly talk about inference: starting with some distribution over hypotheses $\mathcal{H}$ representing our prior beliefs, we observe data $\mathcal{D}$, which in turn causes us to update our beliefs to a new distribution over the same hypotheses $\mathcal{H}$.
+
 ### Prior information
-To start, we need to specify our prior information $p(\mathcal{H})$: how likely do we think $\mathcal{H}$ is a priori (for instance, if $\mathcal{H}$ is the hypothesis that the coin is fair)? Well, this depends on what information we already have about the coin (and the person flipping the coin, and any other relevant information). Probability theory as extended logic prescribes using all the (relevant) available information when doing inferences: if I happen to know the coin has heads on both sides, I should definitely include this information. 
+To start using the theorem, we need to specify our prior information $p(\mathcal{H})$: how likely do we think $\mathcal{H}$ is a priori - for instance, if $\mathcal{H}$ is the hypothesis that the coin is fair? Well, this depends on what information we already have about the coin (and the person flipping the coin, and any other relevant information). Probability theory as extended logic prescribes using all the (relevant) available information when doing inferences: if I happen to know the coin has heads on both sides, I should definitely include this information. 
 
 So let's call any relevant information $\mathcal{I}$, and restate Bayes' theorem:
 
@@ -70,7 +72,7 @@ $p(\mathcal{H}|\mathcal{D}, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) p(\m
 
 Ah, much better. So we just need to specify all possible hypotheses $\mathcal{H}$ consistent with our prior information $\mathcal{I}$, observe data $\mathcal{D}$ (e.g. do experiments), compute $p(\mathcal{D}|\mathcal{I})$, and then $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$ describes exactly how much we should believe the various hypotheses.
 
-Two problems with this approach: 1) we need to specify all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I}) d\mathcal{H}$, which requires enumerating all possible hypotheses consistent with our prior information. 
+Two problems with this approach: 1) we need to enumerate all possible hypotheses consistent with our prior information, 2) we need to compute $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I}) d\mathcal{H}$, which requires... enumerating all possible hypotheses consistent with our prior information. 
 
 ### Commentary part 1
 If you start actually doing this, you'll quickly notice that this is actually an impossible task in most useful cases. How many possible hypotheses are there about the coin? To begin with, the coin's bias could conceivably take any real value between 0 and 1, which is an uncountable 'number' of hypotheses. We could bin these hypotheses together, if we - for all practical purposes - don't care whether the coin has bias 0.50001 or 0.50002. Note that this is already an approximation to the true prescription of Bayes, just a rather inconsequential one. 
@@ -79,7 +81,7 @@ Alright, so what else should be in our hypothesis space? Maybe the coin has two 
 
 Does that last one even count as an hypothesis about the coin? Well, there are definitely observations imaginable that make such an hypothesis intuitively more likely than most mundane coin-hypotheses: what if the coin changes colour and shape mid-flight? The purpose of inference is to, well, make correct inferences about the world, and this is rather difficult if we don't include the hypothesis that describes the world correctly.
 
-We could restrict ourselves to just making statements about the coin, but ignoring factors does not make their influence go away. Maybe the robot always makes the coin come up heads, but once in a while some cosmic radiation flips an important bit in its control system and now the coin comes up tails. An agent with an hypothesis space that just contains hypotheses for 'coin bias' would put a lot of probability mass on high biases for the coin. From the perspective of the agent this is indistinguishable from what is actually happening, so one could be satisfied with this. However, if we now put the robot in a lead(?)-encased room where cosmic radiation has a harder time penetrating, the ratio of heads to tails changes and the agent has no idea why (but it will of course dutifully update its posterior to put more probability density around the appropriate coin bias). 
+We could restrict ourselves to just making statements about the coin, but ignoring factors does not make their influence go away. Maybe the robot always makes the coin come up heads, but once in a while some cosmic radiation flips an important bit in its control system and now the coin comes up tails. An agent with an hypothesis space that just contains hypotheses for 'coin bias' would put a lot of probability mass on high biases - near 1.0 - for the coin. From the perspective of the agent this is indistinguishable from what is actually happening, so one could be satisfied with this. However, if we now put the robot in a lead(?)-encased room where cosmic radiation has a harder time penetrating, the ratio of heads to tails changes and the agent has no idea why (but it will of course dutifully update its posterior to put more probability density around the appropriate coin bias). 
 
 That said, often we don't care to distinguish between the hypotheses 'this coin has a bias near 1' and 'this coin is being flipped by a robot that is programmed to make it come up heads almost always, such that it appears to have bias near 1'. This is fine: this is an approximation. 
 
@@ -109,4 +111,4 @@ When explicitly reasoning using Bayes' theorem, the trick is then to translate t
 
 [^1]: Strictly speaking it might be better to call $\frac{p(B|A)}{p(B)}$ - rather than $p(B|A)$ - the new information, since the logarithm of this is in expectation equal to the mutual information $I(A;B)$ between $A$ and $B$: a measure for how much we learn about $A$ after observing $B$.
 
-[^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 in David MacKay's book *Information Theory, Inference, and Learning Algorithms*), and is very confusing otherwise.
+[^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 *Occam's Razor* in David MacKay's book *Information Theory, Inference, and Learning Algorithms*), and is very confusing otherwise.
