@@ -17,7 +17,7 @@ image:
   filename: featured.jpg
   focal_point: Smart
   preview_only: false
-  caption: Featured image
+  caption: Bayes' Theorem
   alt_text: Screen reader description
 ---
 
