@@ -1,6 +1,6 @@
 ---
 title: From Bayesian inference to modern machine learning
-subtitle: Or: all inference is secretly approximate Bayesian inference
+subtitle: How Bayesian inference in hiding in your non-Bayesian models
 date: 2021-04-07T14:46:05.344Z
 summary: A tour from prescriptive Bayesianism to modern statistical machine learning.
 draft: false
