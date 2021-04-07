@@ -4,7 +4,7 @@ subtitle: Have you heard the good word of our lord and saviour Bayes?
 date: 2021-03-02T14:46:05.344Z
 summary: A look at the objective Bayesian prescription for reasoning under uncertainty.
 draft: false
-featured: true
+featured: false
 
 authors:
   - admin

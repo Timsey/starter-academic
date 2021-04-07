@@ -1,7 +1,7 @@
 ---
 title: From Bayesian inference to modern machine learning
 subtitle: How Bayesian inference in hiding in your non-Bayesian models
-date: 2021-04-07T16:39:00.000Z
+date: 2021-04-07T16:00:00.000Z
 summary: A tour from prescriptive Bayesianism to modern statistical machine learning.
 draft: false
 featured: true
@@ -21,6 +21,6 @@ image:
   alt_text: Screen reader description
 ---
 
-> Epistemic status: I am willing to be quoted on this.
+> *Epistemic status: I am willing to be quoted on this.*
 
 I really like the above image, taken from Andrew Wilson's and Pavel Izmailov's insightful paper [Bayesian Deep Learning and a Probabilistic Perspective of Generalization (2020)](https://arxiv.org/abs/2002.08791).
