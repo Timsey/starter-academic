@@ -4,7 +4,7 @@ subtitle: Have you heard the good word of our lord and saviour Bayes?
 date: 2021-03-02T14:46:05.344Z
 summary: A look at the objective Bayesian prescription for reasoning under uncertainty.
 draft: false
-featured: false
+featured: true
 
 authors:
   - admin
@@ -18,7 +18,7 @@ image:
   focal_point: Smart
   preview_only: false
   caption: Bayes' Theorem
-  alt_text: Screen reader description
+  alt_text: Bayes' Theorem
 ---
 
 > *Epistemic status: not always very precise. The purpose of this blog post is to introduce the many sides of Bayesian probability theory that I have come across over the past few years. I used to be quite confused about this topic, and I feel less confused now, so hopefully this will be helpful to someone. I intend to expand on some of these topics in future posts.*
