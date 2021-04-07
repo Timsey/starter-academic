@@ -4,13 +4,15 @@ subtitle: How Bayesian inference in hiding in your non-Bayesian models
 date: 2021-04-06T16:00:00.000Z
 summary: A tour from prescriptive Bayesianism to modern statistical machine learning.
 draft: false
-featured: true
+featured: false
+
 authors:
   - admin
 tags:
   - Bayesian
 categories: []
 projects: []
+
 image:
   filename: featured.jpg
   focal_point: Smart
