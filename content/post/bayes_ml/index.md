@@ -5,14 +5,12 @@ date: 2021-04-07T16:00:00.000Z
 summary: A tour from prescriptive Bayesianism to modern statistical machine learning.
 draft: false
 featured: true
-
 authors:
   - admin
 tags:
   - Bayesian
 categories: []
 projects: []
-
 image:
   filename: featured.jpg
   focal_point: Smart
