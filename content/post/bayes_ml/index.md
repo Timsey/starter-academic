@@ -3,7 +3,7 @@ title: From Bayesian inference to modern machine learning
 subtitle: How Bayesian inference is hiding in your non-Bayesian models
 date: 2021-04-06T16:00:00.000Z
 summary: A tour from prescriptive Bayesianism to modern statistical machine learning.
-draft: false
+draft: true
 featured: true
 
 authors:
