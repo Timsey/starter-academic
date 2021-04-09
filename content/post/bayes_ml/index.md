@@ -29,13 +29,12 @@ This first requires specifying a specific prior distribution $p(\mathcal{H}|\mat
 
 We already noted how staggeringly impossible this is to do exactly, and thus any kind of Bayesian inference done in practice involves approximations. The common modern machine learning recipe - of specifying a parameterised model class, some prior (or no prior!) over these parameters, and using data and some learning rule to update these parameters so that they minimise some risk function - is precisely such an approximation. Here we will see how.
 
- ### Approximations generally considered as Bayesian
- Let's start slowly: we adhere to the general Bayesian idea that we need some kind of posterior distribution to describe our state of knowledge of some process, but we make some approximations in how we compute this. 
+Let's start slowly: we'll adhere to the general Bayesian idea that we need some kind of posterior distribution to describe our state of knowledge of some process, but we make some approximations in how we compute this. 
 
-#### Exact inference
+### Exact inference
 The simplest case is the 'exact inference' setting, where we can actually compute the evidence term $p(\mathcal{D}|\mathcal{I}) = \int p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I}) d\mathcal{H}$ exactly. This might for instance be the case when we're talking about computing a posterior $p(\mu, \sigma|\mathcal{D}, \mathcal{I})$ for the mean $\mu$ and standard deviation $\sigma$ of a Normal sampling distribution / likelihood function given some data. If we use a [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) for $\mu, \sigma$, then the posterior can be exactly computed, so we've done exact inference! Right?
 
-##### The likelihood
+#### The likelihood
 Well, note that we just introduced the Normal sampling distribution / likelihood out of the blue. If we were proper Bayesians, we would instead have started by considering a distribution over possible hypotheses $\mathcal{H}$ consistent with our initial information $\mathcal{I}$. These hypotheses then immediately define their corresponding likelihood $p(\mathcal{D}|\mathcal{H}, \mathcal{I})$. Indeed, that's what an hypothesis is: it tells us precisely what kind of data we expect to see. In the above example, we've decided to only care about hypotheses that expect our observations to be Normally distributed around some particular $(\mu, \sigma)$, and the value of this $(\mu, \sigma)$ is the only thing that distinguished one hypothesis from another. What if reality is more complicated? Well, then we will not discover this, because we haven't included those options in our hypothesis class.[^1] This is a very strong approximation.
 
 In the language of inductive biases, we've biased our inference to only caring about explanations that are described by a Normal posterior. We will find the best explanation of our observations within this class, but we will not find the true explanation if our hypothesis class does not contain it. 
@@ -44,22 +43,22 @@ In the language of inductive biases, we've biased our inference to only caring a
 
 <!-- Looking back at Bayes' theorem, we see that the recipe doesn't change if we change the hypotheses that $\mathcal{H}$ can represent, so we're in principle allowed to restrict the hypothesis space in this way if we only want to describe our state of knowledge about $\mu, \sigma$. This is the setting of most machine learning problems: we focus on one particular setting at a time, ignoring everything we deem unimportant for the problem at hand. -->
 
-##### The prior
+#### The prior
 Now let's have a look at the chosen prior $p(\mu, \sigma| \mathcal{I})$ as well. We used conjugate priors so that we were able to evaluate the evidence, but this was motivated only as a convenient mathematical trick: to what degree does such a prior actually describe what our current information $\mathcal{I}$ tells us about $\mu, \sigma$? The conjugate prior for a Normal distribution is another Normal: when is this a good prior?
 
 A full answer would take us on a trip down the rabbit hole of constructing objective prior distributions, which is one of the hard problems mentioned in the previous post. One interesting result, though, is that the Normal prior can be motivated through the [principle of maximum entropy](https://en.wikipedia.org/wiki/Principle_of_maximum_entropy) as the prior that uniquely encodes [knowledge of the first and second moment of a parameter, and no other information](https://sgfin.github.io/2017/03/16/Deriving-probability-distributions-using-the-Principle-of-Maximum-Entropy/). So, if we already have some vague idea of the magnitude of $\mu, \sigma$ and of how far we might be off, then the Normal prior is a pretty good choice: not ideal, but a fairly good description of $\mathcal{I}$.
 
 The 'exact' inference setting we looked at here is an insightful one to consider first, since its approximations - using a constrained hypothesis class and choosing a prior that might not fully reflect all known information - come up in (as far as I know) all practical inference methods. Going beyond the exact inference setting - towards settings where we cannot evaluate the evidence term - necessitates additional approximations. Let's look at some of these non-exact methods now.
 
-#### Non-exact inference
+### Non-exact inference
 Two widely used inference methods in modern day Bayesian deep learning are [Markov Chain Monte Carlo (MCMC)](https://www.youtube.com/watch?v=1MRY6Ruu6RU) and [Variational Inference (VI)](https://ermongroup.github.io/cs228-notes/inference/variational/). They typically involve more complex hypotheses than those used in exact inference, which means the evidence term cannot be exactly evaluated. Both of these methods try to solve the intractability of the evidence term by introducing an approximation. The below is a brief discussion on the types of approximations these methods make to the prescription of Bayesian inference: see the links for a starting point on a more thorough explanation of the methods.
 
-##### Markov Chain Monte Carlo
+#### Markov Chain Monte Carlo
 MCMC tries to generate samples from the posterior by setting up a Markov Chain whose stationary distribution is the posterior.  The set-up avoids having to evaluate the evidence, since the chain can be constructed using the ratio of the posterior at any two points, and the evidence term cancels out in this ratio.
 
 So what are the approximations? First of all, there are the same hypothesis space and prior approximations we saw in the exact inference case: we typically consider a restricted set of hypotheses, and our choice of prior might not reflect our information exactly. Secondly, the chain generates samples of the posterior. Even if the sampling is from the exact posterior specified, any finite number of samples is not going to be an exact match for that posterior. Thirdly, samples might not be exactly from the posterior specified due to convergence issues with the chain: most improvements to vanilla MCMC methods focus on tackling this problem, as well as on speeding up inference, which can be quite computationally intensive.
 
-##### Variational Inference
+#### Variational Inference
 VI essentially turns the original inference problem into an optimisation problem. It tries to approximate the posterior by varying the parameters of another proposed distribution until it fits the posterior adequately. Typically the approximating distribution is chosen from a relatively tractable family of distributions, to simplify the procedure. The actual optimisation is typically performed on a lower bound of the evidence term, which has the intended effect of squeezing the approximate distribution closer to the specified posterior. 
 
 Beyond the two standard approximations of practical Bayesian inference, VI introduces an approximation on the specified posterior, which is then fitted by optimising an approximate objective: two more approximations!
@@ -72,14 +71,14 @@ Although MCMC and VI introduce quite some approximations, they are two of a rela
 
 In the previous post, we saw that by [Cox's](https://en.wikipedia.org/wiki/Cox%27s_theorem) [theorem](http://www.stats.org.uk/cox-theorems/VanHorn2003.pdf)  our state of knowledge of the world can be described by a probability distribution over all possible hypotheses consistent with our available information. We can then learn from observations through Bayes' theorem, and fundamentally that's all there is to inference: as we said, *all the rest is commentary*.
 
-##### Decision theory
+#### Decision theory
 So how do we get the most common modern day machine learning practice - training some model to maximise its likelihood - from this prescription? The answer lies in decision theory. 
 
 Note that maximising a likelihood function just returns a single parameter value: the parameter setting that best explains the observed data according to that likelihood function. This is a far cry from the full posterior distribution that we need to describe all our information, and here we have a hint of what happened: we've thrown away information! 
 
 By describing our state of knowledge now with a single parameter value plus some pre-specified model, we have chosen a particular summary of our full state of information. Which summary we choose is a decision we make - they all throw away some information, but different summaries throw away different information - and we will see that the maximum likelihood solution corresponds to one such summary. Whether this choice is a good one really depends on what we want to achieve. Bayesian inference tells us what we know, it doesn't tell us what we care about: it's the role of decision theory to formalise the kind of trade-offs we're willing to make.
 
-##### Deriving MLE from Bayes
+#### Deriving MLE from Bayes
 So, how do we describe this formally? We are trying to summarise our posterior distribution $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$ using some single statistic $S$. Any summary will lose some information, and we can define a decision loss function $L(\mathcal{H}, S)$ that tells us how much we care about certain information versus other information contained in the full posterior. In other words, this loss function tells us how bad it is to use a particular statistic $S$ in the case that $\mathcal{H}$ is the true hypothesis, and it does this for all hypotheses we're considering. There is some abuse of notation here, so let's say this another way: given some summary statistic $S$, we check for each possible hypothesis $\mathcal{H}$ how bad it would be if we made a decision based on $S$ if $\mathcal{H}$ were true (here each $S$ directly corresponds to a decision). 
 
 As an example, let's say we're considering hypotheses on the probability of earthquakes within the next ten years. Instead of using our full posterior to describe this, we choose to use the most likely hypothesis - according to our posterior - as our summary statistic $S$. If this is also the true hypothesis then we've presumably made a good choice, since we'll be making decisions based on something true. If not, then we're making decisions based on something false, and in particular we're throwing away almost all information contained in the posterior distribution that might tell us how wrong we are. In the context of earthquakes, we'd be basing our decisions purely on the (potential) summary 'the most likely earthquake in the next ten years will happen in Japan'. This discards very little information if our actual posterior says there is very low probability on hypotheses that there will be earthquakes somewhere else in the next ten years; otherwise, we've thrown away a lot.
