@@ -21,7 +21,7 @@ image:
   alt_text: Image by Andrew Wilson and Pavel Izmailov
 ---
 
-> *Epistemic status: Not an expert on many of the machine learning methods mentioned, but I expect the conceptual connections I've draw to hold.*
+> *Epistemic status: I'm not an expert on many of the machine learning methods mentioned, and the discussion is primarily conceptual. Expect some abuse of notation. Also, I use the word true a lot, which here means something along the lines of 'corresponding to actual states of the universe'.*
 
 I really like the above figure, taken from Andrew Wilson's and Pavel Izmailov's insightful paper [Bayesian Deep Learning and a Probabilistic Perspective of Generalization (2020)](https://arxiv.org/abs/2002.08791). It conceptually shows the importance of choosing a model's inductive biases for doing inference in modern imaging tasks: choose the range of observations your model can explain too narrowly and you might miss the 'true' model, choose it too widely and your network needs too much data to learn (in the best case). Let's look at this inductive bias more closely.
 
@@ -80,24 +80,4 @@ Note that maximising a likelihood function just returns a single parameter value
 
 By describing our state of knowledge now with a single parameter value plus some pre-specified model, we have chosen a particular summary of our full state of information. Which summary we choose is a decision we make - they all throw away some information, but different summaries throw away different information - and the maximum likelihood solution corresponds to one such summary.
 
-Can we describe this formally? Yes! We are trying to summarise our posterior distribution $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$ using some single statistic $S$. Any summary will lose some information, and we can define a decision loss function $L(S, \mathcal{H})$ that tells us how much we care about certain information versus other information contained in the full posterior. In other words, this loss function tells us how bad it is to use a particular statistic $S$ in the case that $\mathcal{H}$ is the true hypothesis, and it does this for all hypotheses we're considering.
-
-There is some abuse of notation here, so let's say this another way: given some method for constructing a summary statistic $S$, we check for each possible hypothesis $\mathcal{H}$ how bad it would be if we made a decision based on $S$ if $\mathcal{H}$ were true (here each $S$ directly corresponds to a decision). As an example, let's say we're considering hypotheses on the probability of earthquakes within the next ten years. Instead of using our full posterior to describe this, we choose to use the mostly likely hypothesis $\mathcal{H}_\text{max}$ as our summary statistic $S$. This would correspond to throwing away almost all information contained in the posterior distribution, and basing our decisions purely on the (potential) summary 'the most likely earthquake in the next ten years will happen in Japan'. This loses very little information if our actual posterior says there is very low probability on hypotheses that there will be earthquakes somewhere else in the next ten years; otherwise, we've thrown away a lot.
-
-So how bad do we expect such a decision to be? Well, our posterior exactly represents our belief over these various earthquake possibilities, so the expected badness can be computed as the expectation of the loss under our posterior distribution. We write $\mathbb{E}_{p(\mathcal{H}|\mathcal{D}, \, \mathcal{I})} L(S, \mathcal{H})$ for this expectation, and we want to minimise this expected loss over decisions, which here directly correspond to choices of statistics $S$. 
-
-
-
-Following the example above, let's see what happens if we decide use a loss function that assigns loss 0 if $S = \mathcal{H}_\text{max}$, and 1 otherwise. 
-
-
-This loss says we only care about being exactly right
-
-
-[^1]: Machine learning textbooks typically distinguish between the model class and the parameters of the model. In our example, the Normal distribution assumption would be a model, and the various $\mu, \sigma$ values would be considered parameters of that model. This is a type of hierarchy in what I've chosen to just call hypotheses here: any model plus specific parameter setting defines an hypothesis, and in principle we could just as easily do Bayesian inference on that space directly. In practice, the hierarchy can simplify the procedure, but adding the extra level - in my opinion - hides the elegance of the formalism. 
-
-[^2]: For those interested: we can say that vanilla VI tends to posterior mode-seeking behaviour due to the use of the KL-divergence in its objective, and that this goes some way toward [explaining its poor performance when compared to deep ensemble methods](https://arxiv.org/pdf/2002.08791.pdf).
-
-[^3]: This is typical of non-exact methods, especially those that involve optimisation (such as VI): what matters is not just the hypotheses that can in principle be described by the model, but also to what degree the choice of optimisation objective and optimiser introduces preferences for certain types of hypotheses over others. At the risk of speculating, this problem is intuitively only exacerbated by the highly non-convex loss surfaces found in modern Bayesian neural networks.
-
-[^4]: Another such method is the Gaussian Process, which - for the purposes of this blog post - is kind of like the exact inference setting, but now - as far as I can tell - entirely restricted to Normal distributions for likelihood and prior. A Gaussian Process computes a posterior directly on functions, rather than parameters. This can be nice, as it is sometimes easier to translate available information to priors over what functions should look like, rather than what values certain parameters should take.
+Can we describe this formally? Yes! We are trying to summarise our posterior
