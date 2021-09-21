@@ -27,10 +27,10 @@ experience:
   - title: Research intern
     company: Facebook AI Research
     company_url: 'https://ai.facebook.com'
-    location: Montreal
+    location: Montreal (remote)
     date_start: '2021-06-07'
     date_end: ''
-    description: Researching active acquisition methods for Magnetic Resonance Imaging.
+    description: Research internship on machine learning for active acquisition methods in Magnetic Resonance Imaging.
   - title: PhD researcher
     company: AMLab, University of Amsterdam
     company_url: 'https://amlab.science.uva.nl'
