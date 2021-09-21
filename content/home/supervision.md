@@ -12,8 +12,8 @@ design:
 ---
 
 ### **Master AI projects**
-  - **2020-2021**: Uncertainty-diversity trade-offs in deep active learning [preliminary title], *András Csirik*.
-  - **2020-2021**: Revisiting fundamentals of deep reinforcement learning in traffic signal control [preliminary title], *Sierk Kanis*.
+  - **2020-2021**: Uncertainty and Diversity Based Methods in Batch-Mode Active Learning, *András Csirik*.
+  - **2020-2021**: Back to Basics: Deep Reinforcement Learning in Traffic Signal Control, *Sierk Kanis*.
   - **2019-2020**: Contrastively-shaped reward signals for curiosity-based exploration tasks, *Nil Stolt Anso*.
 
 ### **Bachelor AI projects**
