@@ -29,7 +29,7 @@ experience:
     company_url: 'https://ai.facebook.com'
     location: Montreal (remote)
     date_start: '2021-06-07'
-    date_end: ''
+    date_end: '2021-10-07'
     description: Research internship on machine learning for active acquisition methods in Magnetic Resonance Imaging.
   - title: PhD researcher
     company: AMLab, University of Amsterdam

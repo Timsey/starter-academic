@@ -29,15 +29,22 @@ experience:
     company_url: 'https://eameditation.org'
     location: Online
     date_start: '2020-10-01'
-    date_end: ''
-    description: EA Meditation tries to connect EAs with an interest in meditation, and gives them a place to practice together.
-  - title: Mentor and organiser
+    date_end: '2020-05-01'
+    description: EA Meditation tries to connect effective altruists with an interest in meditation, and gives them a place to practice together.
+  - title: Mentor
     company: Inclusive AI
     company_url: 'https://uva-iai.github.io'
     location: Amsterdam
     date_start: '2019-05-20'
     date_end: ''
-    description: The IAI is an inclusive space for members to get non-academic help from senior peers in the field and connect with like-minded people of a similar background.
+    description: As an IAI mentor, I help members navigate the academic and non-academic world during and after their Master AI programme.
+  - title: Board member
+    company: Inclusive AI
+    company_url: 'https://uva-iai.github.io'
+    location: Amsterdam
+    date_start: '2019-05-20'
+    date_end: '2021-10-01'
+    description: The IAI is an inclusive space for members to receive non-academic help from senior peers in the field and connect with people of various backgrounds. As a board member I think about ways to make IAI more effective at combating the 'leaky-pipeline' problem of AI industry and academia, and organise events to give our mentees a head-start.
   - title: Founder and organiser
     company: Effective Altruism Amsterdam meetup
     company_url: 'https://www.facebook.com/groups/EAAmsterdam'
