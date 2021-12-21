@@ -30,7 +30,7 @@ experience:
     location: Online
     date_start: '2020-10-01'
     date_end: '2020-05-01'
-    description: EA Meditation tries to connect effective altruists with an interest in meditation, and gives them a place to practice together. My primary role was to guide weekly 20-minute breath meditations.
+    description: EA Meditation tries to connect effective altruists with an interest in meditation, and gives them a place to practice together. My primary role was to guide weekly 20 minute breath meditations.
   - title: Mentor
     company: Inclusive AI
     company_url: 'https://uva-iai.github.io'
