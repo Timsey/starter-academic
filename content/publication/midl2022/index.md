@@ -32,10 +32,10 @@ publication_types: ["1"]
 publication: In *Medical Imaging with Deep Learning (MIDL, 2022)*
 publication_short: MIDL 2022
 
-abstract: Most current approaches to undersampled multi-coil MRI reconstruction focus on learning the reconstruction model for a fixed, equidistant acquisition trajectory. In this paper, we study the problem of joint learning of the reconstruction model together with acquisition policies. To this end, we extend the End-to-End Variational Network with learnable acquisition policies that can adapt to different data points. We validate our model on a coil-compressed version of the large scale undersampled multi-coil \fastMRI dataset using two undersampling factors: 4x and 8x. Our experiments show on-par performance with the learnable non-adaptive and handcrafted equidistant strategies at 4x, and an observed improvement of more than 2% in SSIM at 8x acceleration, suggesting that potentially-adaptive $k$-space acquisition trajectories can improve reconstructed image quality for larger acceleration factors. However, and perhaps surprisingly, our best performing policies learn to be explicitly non-adaptive.
+abstract: Most current approaches to undersampled multi-coil MRI reconstruction focus on learning the reconstruction model for a fixed, equidistant acquisition trajectory. In this paper, we study the problem of joint learning of the reconstruction model together with acquisition policies. To this end, we extend the End-to-End Variational Network with learnable acquisition policies that can adapt to different data points. We validate our model on a coil-compressed version of the large scale undersampled multi-coil \fastMRI dataset using two undersampling factors, 4x and 8x. Our experiments show on-par performance with the learnable non-adaptive and handcrafted equidistant strategies at 4x, and an observed improvement of more than 2% in SSIM at 8x acceleration, suggesting that potentially-adaptive k-space acquisition trajectories can improve reconstructed image quality for larger acceleration factors. However, and perhaps surprisingly, our best performing policies learn to be explicitly non-adaptive.
 
 # Summary. An optional shortened abstract.
-summary: We use policy gradient methods to learn active acquisition policies for improving MRI reconstruction.
+summary: We extend adaptive MRI subsampling methods to the more clinically-relevant multi-coil setting.
 
 tags: 
 - Active sensing
