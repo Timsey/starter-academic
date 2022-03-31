@@ -50,7 +50,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://openreview.net/pdf?id=eAkOp9Oet5y'
+url_pdf: 'https://arxiv.org/pdf/2203.16392.pdf'
 url_code: 'https://github.com/facebookresearch/fastMRI'
 url_dataset: ''
 url_poster: ''
