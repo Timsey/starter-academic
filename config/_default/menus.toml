@@ -31,12 +31,12 @@
 [[main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 50
+  weight = 52
 
 [[main]]
   name = "Supervision"
   url = "#supervision"
-  weight = 52
+  weight = 50
 
 [[main]]
   name = "Experience"
