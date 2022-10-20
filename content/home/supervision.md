@@ -1,7 +1,7 @@
 ---
 widget: blank
 headless: true
-weight: 52
+weight: 50
 
 title: Supervision
 active: true
