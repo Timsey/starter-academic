@@ -1,12 +1,12 @@
 ---
 title: Tim Bakker
 role: PhD researcher in Machine Learning
-bio: My research interests include active learning/sensing, reinforcement learning, ML for molecular dynamics and
+bio: My research interests include active learning/sensing, reinforcement learning, ML for simulations, and
   everything Bayesian.
 interests: 
   - Machine Learning
   - Reinforcement learning
-  - AI4Science
+  - ML for simulations
   - Bayesian probability theory
 social:
   - icon: envelope
@@ -42,8 +42,8 @@ email: "t.b.bakker@uva.nl"
 superuser: true
 highlight_name: false
 ---
-I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research focuses on active learning and active sensing through reinforcement learning.
+I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research primarily focuses on active learning and active sensing through reinforcement learning. I have also been an intern at Facebook AI Research (FAIR), working on active sensing for MRI acceleration.
 
-Other interests include ML for molecular dynamics, everything Bayesian, effective altruism, and musical theater.
+Other interests of mine include ML for simulations, everything Bayesian, effective altruism, and musical theater.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
