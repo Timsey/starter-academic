@@ -2,7 +2,7 @@
 title: Existential Risks of Artificial Intelligence
 
 event: Panel at Pakhuis de Zwijger
-event_url: []
+event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
 
 location: Pakhuis de Zwijger
 address:
@@ -35,7 +35,7 @@ featured: true
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
 #  focal_point: Right
 
-links: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
+#links: 
 #- icon: twitter
 #  icon_pack: fab
 #  name: Follow

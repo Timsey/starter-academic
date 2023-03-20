@@ -2,7 +2,7 @@
 title: Experimental design for MRI by greedy policy search 
 
 event: AMLab seminar
-event_url: https://amlab.science.uva.nl/tim-bakkers-talk/
+event_url: https://web.archive.org/web/20210724082130/https://amlab.science.uva.nl/tim-bakkers-talk/
 
 location: Online
 #address:
