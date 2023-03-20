@@ -28,7 +28,7 @@ publishDate: ""
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: Under submission at ICML 2023.
+publication: Preprint
 publication_short:
 
 abstract: We propose E-C2ST, a deep classifier two-sample test for high-dimensional data based on E-values. Unlike the more standard p-value based tests, E-value based tests have *finite sample* type I error guarantees, making them appropriate tools for statistical testing in practice. Our proposed E-C2ST combines ideas from existing work on split likelihood ratio tests and predictive independence testing. The resulting E-values can be used for both standard statistical testing on a fixed data set as well as anytime testing in streaming data settings. We demonstrate the utility of E-C2ST on simulated and real data. In all experiments, we observe that -- as expected -- E-C2ST's type I error stays substantially below the chosen significance level, while the p-value based baseline methods regularly fail to control for type I error appropriately. While E-C2ST has reduced power compared to the baseline methods, power empirically converges to one as dataset size increases in most settings. We further propose an adjusted $\Ev$-value based test in the anytime testing framework that has increased power, while still retaining the finite sample type I error guarantees.
