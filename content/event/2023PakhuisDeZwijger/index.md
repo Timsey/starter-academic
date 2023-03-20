@@ -5,10 +5,10 @@ event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
 
 location: Pakhuis de Zwijger
-address:
- street: Piet Heinkade 179
- postcode: 1019 HC
- city: Amsterdam
+# address:
+# street: Piet Heinkade 179
+# postcode: 1019 HC
+# city: Amsterdam
 #  country: Netherlands
 #  region: CA
 
