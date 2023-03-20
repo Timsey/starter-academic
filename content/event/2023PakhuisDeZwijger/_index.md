@@ -1,5 +1,5 @@
 ---
-title: Existential Risks of Artificial Intelligence
+title: Existential Risks of Artificial Intelligence (12 April 2023)
 
 event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
@@ -18,12 +18,12 @@ summary: Panel on the existential risks of artificial intelligence, with Stuart 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-04-12T20:00:00Z"
-date_end: "2023-04-12T22:30:00Z"
+date: "2023-03-12T20:00:00Z"
+date_end: "2023-03-12T22:30:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2023-03-19T00:00:00Z"
+# publishDate: "2023-03-19T00:00:00Z"
 
 authors: []
 tags: []
