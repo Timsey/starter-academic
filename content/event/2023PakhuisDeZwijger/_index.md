@@ -1,16 +1,16 @@
 ---
 title: Existential Risks of Artificial Intelligence
 
-event: Qualcomm academic lecture
+event: Panel at Pakhuis de Zwijger
 event_url: []
 
 location: Pakhuis de Zwijger
 address:
  street: Piet Heinkade 179
  city: Amsterdam
-#  region: CA
  postcode: 1019 HC
  country: Netherlands
+#  region: CA
 
 
 summary: Panel on the existential risks of artificial intelligence, with Stuart Russell, Maxim Februari, Queeny-Aimee Rajkowski, Tim Bakker, and others.
