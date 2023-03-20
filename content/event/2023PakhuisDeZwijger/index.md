@@ -7,9 +7,9 @@ event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intell
 location: Pakhuis de Zwijger
 address:
  street: Piet Heinkade 179
- city: Amsterdam
  postcode: 1019 HC
- country: Netherlands
+ city: Amsterdam
+#  country: Netherlands
 #  region: CA
 
 summary: Panel on the existential risks of artificial intelligence, with Stuart Russell, Maxim Februari, Queeny-Aimee Rajkowski, Tim Bakker, and others.
