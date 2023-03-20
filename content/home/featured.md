@@ -16,7 +16,7 @@ subtitle: ""
 
 content:
   # Page type to display. E.g. post, talk, publication...
-  page_type: talk
+  page_type: event
   # Choose how many pages you would like to display (0 = all pages)
   count: 0
   # Filter on criteria
