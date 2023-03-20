@@ -5,11 +5,11 @@ event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
 
 location: Pakhuis de Zwijger
-#address:
-#  street: Piet Heinkade 179
-#  city: Amsterdam
-#  postcode: 1019 HC
-#  country: Netherlands
+address:
+ street: Piet Heinkade 179
+ city: Amsterdam
+ postcode: 1019 HC
+ country: Netherlands
 #  region: CA
 
 summary: Panel on the existential risks of artificial intelligence, with Stuart Russell, Maxim Februari, Queeny-Aimee Rajkowski, Tim Bakker, and others.
@@ -17,8 +17,8 @@ summary: Panel on the existential risks of artificial intelligence, with Stuart 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-04-12T20:00:00Z"
-date_end: "2023-04-12T22:30:00Z"
+date: "2022-04-12T20:00:00Z"
+#date_end: "2022-04-12T22:30:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -28,7 +28,7 @@ authors: []
 tags: []
 
 # Is this a featured talk? (true/false)
-featured: false
+featured: true
 
 #image:
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
