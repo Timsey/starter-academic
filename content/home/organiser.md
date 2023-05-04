@@ -60,7 +60,7 @@ experience:
     date_end: '2019-02-01'
     description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch. As interim board member I updated our statutes, wrote summaries for PR material, and performed a general assisting role.
   - title: Founder and organiser
-    company: Effective Altruism Amsterdam meetup
+    company: Effective Altruism Amsterdam
     company_url: 'https://www.eaamsterdam.org/'
     location: Amsterdam
     date_start: '2016-03-01'
