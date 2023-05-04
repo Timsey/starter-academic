@@ -12,7 +12,7 @@ location: Online
 #  postcode: '94305'
 #  country: United States
 
-summary: NeurIPS presentation on our 2020 Spotlight paper: Experimental design for MRI by greedy policy search.
+summary: NeurIPS presentation on our 2020 Spotlight paper, Experimental design for MRI by greedy policy search.
 #abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
