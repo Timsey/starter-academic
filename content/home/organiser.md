@@ -30,7 +30,7 @@ experience:
     location: Online
     date_start: '2020-10-01'
     date_end: '2021-05-01'
-    description: EA Meditation tries to connect effective altruists with an interest in meditation, and gives them a place to practice together. My primary role was to guide weekly 20-minute breath meditations.
+    description: EA Meditation worked to connect effective altruists with an interest in meditation, and gives them a place to practice together. My primary role was to guide weekly 20-minute breath meditations.
   - title: Mentor
     company: Inclusive AI
     company_url: 'https://uva-iai.github.io'
@@ -61,11 +61,11 @@ experience:
     description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch. As interim board member I updated our statutes, wrote summaries for PR material, and performed a general assisting role.
   - title: Founder and organiser
     company: Effective Altruism Amsterdam meetup
-    company_url: 'https://www.facebook.com/groups/EAAmsterdam'
+    company_url: 'https://www.eaamsterdam.org/'
     location: Amsterdam
     date_start: '2016-03-01'
     date_end: ''
-    description: We meet every month to philosophise, discuss current events, and talk about the best ways to have an actual impact in the world.
+    description: We meet throughout the month to discuss current events, talk about the best ways to have an actual impact in the world, and then do that.
   - title: Co-founder and organiser
     company: LessWrong Netherlands meetup
     company_url: 'https://www.facebook.com/groups/RationalityMeetupNL'
