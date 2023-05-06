@@ -4,7 +4,7 @@ title: Existential Risks of Artificial Intelligence
 event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
 
-location: Pakhuis de Zwijger
+location: Pakhuis de Zwijger, Amsterdam
 address:
  street: Piet Heinkade 179
  postcode: 1019 HC
@@ -34,7 +34,7 @@ featured: false
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
 #  focal_point: Right
 
-#links: 
+links: 
 #- icon: twitter
 #  icon_pack: fab
 #  name: Follow
@@ -42,7 +42,7 @@ featured: false
 #url_code: ""
 #url_pdf: ""
 #url_slides: ""
-#url_video: ""
+url_video: "https://www.youtube.com/watch?v=vGQDctxwy2E"
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

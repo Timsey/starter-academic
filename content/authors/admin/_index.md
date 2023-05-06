@@ -42,8 +42,10 @@ email: "t.b.bakker@uva.nl"
 superuser: true
 highlight_name: false
 ---
-I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research primarily focuses on active learning and active sensing through reinforcement learning. I have also been an intern at Facebook AI Research (FAIR), working on active sensing for MRI acceleration.
+I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research primarily focuses on active learning and active sensing for high-tech applications, such as MRI and molecular simulations. Currently on research internship at Qualcomm AI, previously at Facebook AI Research (FAIR).
 
-Other interests of mine include ML for simulations, everything Bayesian, effective altruism, and musical theater.
+Other interests include everything Bayesian, [effective altruism](https://www.eaamsterdam.org/), and [musical theater](https://www.hetaspk.nl/).
+
+I have recently spoken about the (existential) risks of AI at [Pakhuis de Zwijger](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence) and the Dutch Ministry of Defence. Please reach out if you're interested in a similar talk.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
