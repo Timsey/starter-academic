@@ -4,10 +4,10 @@ role: PhD researcher in Machine Learning
 bio: My research interests include active learning/sensing, reinforcement learning, ML for simulations, and
   everything Bayesian.
 interests: 
-  - Machine Learning
-  - Reinforcement learning
-  - ML for simulations
+  - Active learning / sensing
+  - AI alignment
   - Bayesian probability theory
+  - Musical theater
 social:
   - icon: envelope
     icon_pack: fas
