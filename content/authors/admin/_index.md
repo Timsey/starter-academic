@@ -48,4 +48,4 @@ Other interests include everything Bayesian, [effective altruism](https://www.ea
 
 I have recently spoken about the (existential) risks of AI at [Pakhuis de Zwijger](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence) and the Dutch Ministry of Defence. Please reach out if you're interested in a similar talk.
 
-# {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
