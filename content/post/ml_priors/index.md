@@ -3,13 +3,13 @@ title: Priors and generalisation
 subtitle: Implicit priors in deep learning methods
 date: 2021-04-06T16:00:00.000Z
 summary: A look at the role of priors in deep learning methods.
-draft: true
+draft: false
 featured: true
 
 authors:
   - admin
 tags:
-  - Bayesian
+  - Bayesian, AI alignment
 categories: []
 projects: []
 
@@ -21,7 +21,7 @@ image:
   alt_text: Image by Andrew Wilson and Pavel Izmailov
 ---
 
-> *Epistemic status:*  
+> *Epistemic status: lots of handwaveyness connecting our prior knowledge to our ML design choices.*  
   
 I really like the above figure, taken from Andrew Wilson's and Pavel Izmailov's insightful paper [Bayesian Deep Learning and a Probabilistic Perspective of Generalization (2020)](https://arxiv.org/abs/2002.08791). It conceptually shows the importance of choosing a model's inductive biases for doing inference in modern imaging tasks: choose the range of observations your model can explain too narrowly and you might miss the 'true' model, choose it too widely and your network needs too much data to learn (in the best case). Let's look at this inductive bias more closely.  
   
@@ -55,6 +55,7 @@ Of course, this handwaves away lots of details. We are definitely including prio
 
 We've argued that MLE tends to be MAP in machine learning practice. Still, the proper Bayesian approach would be to model the full posterior distribution $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$, rather than just the MAP. The MAP is just the posterior mode, which [we've seen previously](https://www.tbbakker.nl/post/bayes_ml/) is the optimal decision statistic under a specific choice of decision-regret function. In situations where we want care about different trade-offs, we might want to actually learn a full posterior. This is what the field of Bayesian Deep Learning mostly concerns itself with. Typical approaches are turning [(some of the)](https://proceedings.mlr.press/v206/sharma23a/sharma23a.pdf) network weights into distributions trained using [adaptations to stochastic gradient descent](https://arxiv.org/abs/1505.05424) or even [Hamiltonian MCMC](http://proceedings.mlr.press/v139/izmailov21a/izmailov21a.pdf), or taking a MAP estimate and estimating a distribution around it with the [Laplace approximation](https://arxiv.org/pdf/2106.14806.pdf). There's also [Deep Ensembles](https://arxiv.org/pdf/1612.01474v3.pdf) and [MC Dropout](https://arxiv.org/abs/1506.02142), which do not explicitly model a distribution of model weights, but find a way to generate samples from the supposed posterior.
 
-This concludes this sequence on Bayesianism in machine learning. This started as an exploration of the question: "if Bayesian probability theory is the proper way to do inference, why are we not doing it in ML practice?". It turns out that we are doing some approximation to proper Bayesian inference, modulated by a lot of practical considerations and the [messy Bayesianism](https://slatestarcodex.com/2017/09/05/book-review-surfing-uncertainty/) [implemented in](https://slatestarcodex.com/2017/09/06/predictive-processing-and-perceptual-control/) [our brains](https://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy/). 
+This concludes this sequence on Bayesianism in machine learning. This started as an exploration of the question: "if Bayesian probability theory is the proper way to do inference, why are we not doing it in ML practice?". It turns out that we are doing some approximation to proper Bayesian inference, modulated by a lot of practical considerations and the [messy Bayesianism](https://slatestarcodex.com/2017/09/05/book-review-surfing-uncertainty/) [implemented in](https://slatestarcodex.com/2017/09/06/predictive-processing-and-perceptual-control/) [our brains](https://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy/). Deep learning is a very experimental field, and a large part of doing it well is building up intuitions for what works by playing around with the models. Intuitions, of course, encode priors. The fact that deep learning has no strong overarching theoretical paradigm makes using these vague priors crucial, because we cannot (yet?) actually reason about these models from first-principles very well. This reasoning will only become more difficult as our models increase in size and complexity, which potentially leads to big problems when these models are deployed in the real-world. To end this post, I want to plug the field of [mechanistic interpretability](https://transformer-circuits.pub/2022/mech-interp-essay/index.html).  Mechanistic interpretabilty essentially tries to reverse-engineer neural networks in order to better understand how they produce their outputs. If we want to make sure that our (Large Language) [models are](https://arxiv.org/pdf/2209.00626.pdf) [robustly aligned to](https://www.alignmentforum.org/) [human goals](https://ai-alignment.com/) -- and we should make sure -- we'll need this kind of [AI alignment research](https://www.agisafetyfundamentals.com/ai-alignment-curriculum) [and more](https://vkrakovna.wordpress.com/ai-safety-resources/).
+
 
 [^1]: Why huge datasets? Bayes' theorem of course! The dataset provides the evidence term $p(\mathcal{D}|\mathcal{H}, \mathcal{I})$: with enough data this term is strong enough to concentrate probability mass around strong hypotheses, even when starting out with the very wide prior $p(\mathcal{H}|\mathcal{I})$ given by a fully-connected neural net.
