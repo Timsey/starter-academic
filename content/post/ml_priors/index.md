@@ -1,7 +1,7 @@
 ---
 title: Priors and generalisation
 subtitle: Implicit priors in deep learning methods
-date: 2023-05-12T16:00:00.000Z
+date: 2023-05-12T12:00:00.000Z
 summary: A look at the role of priors in deep learning methods.
 draft: false
 featured: true
