@@ -123,7 +123,7 @@ The latter is especially important right now, because 1) reducing AI risk is [no
 6. Expand technical AI safety research funding. 
 7. Develop standards for identifying and managing AI-generated content and recommendations.
 
-My personal view is that policy work is an absolutely crucial part of the solution. The companies (and perhaps in the future: governments) attempting to build ever more capable AI systems need stronger incentives to treat AI alignment as the difficult and hugely important problem it is. Alignment researchers need time to actually make progress on the technical problems, and we may not have that time unless we put the brakes on large AI training runs.[^8]
+My personal view is that policy work is an absolutely crucial part of the solution.[^11] The companies (and perhaps in the future: governments) attempting to build ever more capable AI systems need stronger incentives to treat AI alignment as the difficult and hugely important problem it is. Alignment researchers need time to actually make progress on the technical problems, and we may not have that time unless we put the brakes on large AI training runs.[^8]
 
 
 ### Closing
@@ -151,3 +151,5 @@ Feel free to [contact me](https://www.tbbakker.nl/) with any questions.
 [^9]: Note that [not everyone in the alignment community agrees with the decomposition of the problem into outer and inner alignment](https://www.alignmentforum.org/posts/gHefoxiznGfsbiAu9/inner-and-outer-alignment-decompose-one-hard-problem-into).
 
 [^10]: AI systems may learn to become [deceptively aligned](https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment): they may seem aligned until the opportunity arises for them to gain a decisive advantage over humanity, at which point they act. This complicates matters tremendously, unless we can understand the inner workings of these systems. Here are some arguments for why [training with stochastic gradient descent may favour deceptive alignment](https://www.lesswrong.com/posts/ocWqg2Pf2br4jMmKA/does-sgd-produce-deceptive-alignment).
+
+[^11]: It's worth noting that some people in the field are of the opinion that alignment is not a solvable problem, and that the only safe way forward is halting humanity's efforts at building AGI. This would make policy the single most important factor in reducing the existential risks from AI.
