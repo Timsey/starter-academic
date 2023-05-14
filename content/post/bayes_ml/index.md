@@ -21,6 +21,8 @@ image:
   alt_text: Image by xkcd
 ---
 
+[< Previous post](https://www.tbbakker.nl/post/bayes_commentary/)
+
 > *Epistemic status: I'm not an expert on many of the machine learning methods mentioned, and the discussion is primarily conceptual. Expect some abuse of notation. I will use the word 'true' a lot, which here means something along the lines of 'corresponding to actual states of the universe'.*
 
 In the [previous post](https://www.tbbakker.nl/post/bayes_commentary/) we discussed how objective Bayesian inference prescribes using Bayes' theorem to learn about the world: $p(\mathcal{H}|\mathcal{D}, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
@@ -101,6 +103,8 @@ So where does this leave us? The ubiquity of Maximum Likelihood Estimation in mo
 Part of the answer is that we can't and we shouldn't: for many applications uncertainty estimates are very important, and these are simply not provided by MLE methods. To mitigate this, we can do robustness and calibration analyses that give us some idea of how important the discarded information is for the predictions we intend to use our models for. In the end, the applicability of and MLE model is determined by what our posterior looks like: if it's very peaked around the MLE hypothesis, then we might be fine, but this is of course hard to tell without access to the full posterior.
 
 Additionally, we haven't discussed some important complexities surrounding prior information. The MLE formulation doesn't talk about priors explicitly, but the above shows that it implicitly uses a uniform prior over the parameters. This is far from the full story however, as in practice a lot of our prior information enters as modelling choices, which induce their own kind of inductive bias: more on this in the next post.
+
+[Next post >](https://www.tbbakker.nl/post/ml_priors/)
 
 [^1]: Machine learning textbooks typically distinguish between the model class and the parameters of the model. In our example, the Normal distribution assumption would be a model, and the various $\mu, \sigma$ values would be considered parameters of that model. This is a type of hierarchy in what I've chosen to just call hypotheses here: any model plus specific parameter setting defines an hypothesis, and in principle we could just as easily do Bayesian inference on that space directly. In practice, the hierarchy can simplify the procedure, but adding the extra level - in my opinion - hides the elegance of the formalism. 
 
