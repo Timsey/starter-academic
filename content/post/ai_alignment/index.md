@@ -1,7 +1,7 @@
 ---
 title: AI alignment
 subtitle: The most important problem facing humanity.
-date: 2023-05-014T20:00:00.000Z
+date: 2023-05-14T20:00:00.000Z
 summary: My views on the importance and difficulty of the AI alignment problem.
 draft: false
 featured: true
