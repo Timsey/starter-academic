@@ -109,6 +109,8 @@ Luckily, it does seem to be the case that the kind of problems we encounter have
 
 When explicitly reasoning using Bayes' theorem, the trick is then to translate these regularities / this inductive bias / this prior information into actual priors $p(\mathcal{H}|\mathcal{I})$, which is one of hard problems mentioned previously. A nice tidbit is that one of the methods for doing this - [the principle of maximum entropy](https://en.wikipedia.org/wiki/Principle_of_maximum_entropy) - also gives us some results from statistical mechanics for free. More on this - you guessed it - another time.
 
+<style>[Next post](https://www.tbbakker.nl/post/bayes_ml/) {text-align: right}</style>
+
 [^1]: Strictly speaking it might be better to call $\frac{p(B|A)}{p(B)}$ - rather than $p(B|A)$ - the new information, since the logarithm of this is in expectation equal to the mutual information $I(A;B)$ between $A$ and $B$: a measure for how much we learn about $A$ after observing $B$.
 
 [^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 *Occam's Razor* in David MacKay's book *Information Theory, Inference, and Learning Algorithms*), and is very confusing otherwise.
