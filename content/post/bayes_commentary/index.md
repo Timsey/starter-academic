@@ -113,4 +113,4 @@ When explicitly reasoning using Bayes' theorem, the trick is then to translate t
 
 [^1]: Strictly speaking it might be better to call $\frac{p(B|A)}{p(B)}$ - rather than $p(B|A)$ - the new information, since the logarithm of this is in expectation equal to the mutual information $I(A;B)$ between $A$ and $B$: a measure for how much we learn about $A$ after observing $B$.
 
-[^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 *Occam's Razor* in David MacKay's book *Information Theory, Inference, and Learning Algorithms*), and is very confusing otherwise.
+[^2]: As far as I know, this terminology only makes sense in the context of model selection (see for instance section 28.1 *Occam's Razor* in David MacKay's book [*Information Theory, Inference, and Learning Algorithms*)](https://www.inference.org.uk/itprnn/book.pdf), and is very confusing otherwise.
