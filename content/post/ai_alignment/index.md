@@ -49,7 +49,7 @@ Our current narrow AI systems are already causing some trouble. For example, [AI
 
 The social media example is illustrative, because it points to an enormous safety problem in the way we currently build AI systems: we don’t know how to robustly get AI to do what we want. Our current paradigm is [deep learning](https://en.wikipedia.org/wiki/Deep_learning), which involves training large models on huge datasets. Training is implemented as an optimisation problem, where every data point tells the model how to [change itself a tiny bit](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) such that it becomes better at predicting that datapoint. Training an AI system essentially amounts to searching a huge space of possible algorithms for one that does well on your task, as specified by your training data and loss function (objective). This has one main implication: no one actually knows exactly why a deep learning system predicts what it does or performs the actions that it does.[^3] 
 
-> Continuing to build more capable AI systems when we understand so little of what goes on in the models has the potential to lead to existentially dangerous scenarios. 
+> **Continuing to build more capable AI systems when we understand so little of what goes on in the models has the potential to lead to existentially dangerous scenarios**. 
 
 In my experience, the above statement is obviously true to some people, and completely out of left field for others. Below I will try my best to sketch out why I think this is something we should be deeply worried about.
 
