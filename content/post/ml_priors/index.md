@@ -63,6 +63,7 @@ This concludes this sequence on Bayesianism in machine learning. This started as
 
 Reasoning about these models will only become more difficult as they increase in size and complexity, which potentially leads to big problems when these models are deployed in the real-world. To end this post, I want to plug the field of [mechanistic interpretability](https://transformer-circuits.pub/2022/mech-interp-essay/index.html). Mechanistic interpretability essentially tries to reverse-engineer neural networks in order to better understand how they produce their outputs. If we want to make sure that our (Large Language) [models are](https://arxiv.org/pdf/2209.00626.pdf) [robustly aligned to](https://www.alignmentforum.org/) [human goals](https://ai-alignment.com/) -- and we should make sure -- we'll need this kind of [AI alignment research](https://www.agisafetyfundamentals.com/ai-alignment-curriculum) [and more](https://vkrakovna.wordpress.com/ai-safety-resources/). I will be writing more on this in the future.
 
+[Next post >](https://www.tbbakker.nl/post/ai_alignment/)
 
 [^1]: Why huge datasets? Bayes' theorem of course! The dataset provides the likelihood term $p(\mathcal{D}|\mathcal{H}, \mathcal{I})$: with enough data this term is strong enough to concentrate probability mass around strong hypotheses, even when starting out with the very wide prior $p(\mathcal{H}|\mathcal{I})$ given by a fully-connected neural net.
 
