@@ -30,21 +30,21 @@ image:
 So. AI alignment.
 
 
-# Sounding the alarm
+## Sounding the alarm
 
 In the last few months, many researchers have come out to say they are worried about the dangers of future AI systems. These include two of the three Turing Award winners, [Geoffrey Hinton](https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html) and [Yoshua Bengio](https://yoshuabengio.org/2023/05/07/ai-scientists-safe-and-useful-ai/), [Gary Marcus](https://www.ted.com/talks/gary_marcus_the_urgent_risks_of_runaway_ai_and_what_to_do_about_them), [Nando de Freitas](https://twitter.com/NandoDF/status/1653685589697241090), [David Duvenaud](https://twitter.com/DavidDuvenaud/status/1639365724316499971), [Dan Hendrycs](https://arxiv.org/abs/2303.16200), and [many others](https://futureoflife.org/open-letter/pause-giant-ai-experiments/). Even [Snoop Dogg is worried](https://twitter.com/pkedrosky/status/1653955254181068801).
 
 Other researchers have been publicly worried for longer. Among these is [Stuart Russell](https://www.youtube.com/watch?v=ISkAkiAkK7A), professor of computer science at the University of California, Berkeley, and writer of [“the most popular artificial intelligence textbook in the world”](https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach). He recently spoke at [the Pakhuis de Zwijger panel on Existential Risks of AI](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence) in Amsterdam, where I was invited to be a panellist. The panel came at a great time: OpenAI had just released their newest Large Language Model (LLM) – [GPT-4](https://openai.com/product/gpt-4) – a month before, Microsoft had released [Sidney/Bing](https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/) a month before *that*, with Google’s [Bard](https://blog.google/technology/ai/bard-google-ai-search-updates/) right on their heels, and the world was paying attention. The panel sold out, was moved to the main hall, and sold out again.
 
 
-# What is AI?
+## What is AI?
 
 So what are we worried about? Stuart Russell’s introductory talk is worth watching for both laypeople and experts. A recording of his talk as well as the entire panel is available [here](https://www.youtube.com/watch?v=vGQDctxwy2E). He starts by explaining the goal of companies like OpenAI and DeepMind: to build *general-purpose AI*; AI capable of (quickly learning) high-quality behaviour in any task environment. You may have previously heard this described as Artificial General Intelligence (AGI). Such an AI would be able to perform a wide variety of tasks. Among other things, it would be able to play [chess, Go](https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go), and [other games](https://www.deepmind.com/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii), [search the internet](https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/), [plan and execute on those plans](https://github.com/Significant-Gravitas/Auto-GPT), [chat with people](https://openai.com/blog/chatgpt), [manipulate people](https://www.euronews.com/next/2023/03/31/man-ends-his-life-after-an-ai-chatbot-encouraged-him-to-sacrifice-himself-to-stop-climate-), [write code](https://github.com/features/copilot), and [solve scientific problems](https://www.deepmind.com/research/highlighted-research/alphafold).
 
 Current AI systems can do all these things already to some degree. Mostly, these are narrow AI systems trained to do a particular task very well, but there are some examples of systems that can already perform multiple tasks. For instance, GPT-4 can chat, write code, and answer scientific questions (to varying degrees of success). Its sister product Sydney/Bing can chat, search the internet, and even [attempted manipulation](https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html) before Microsoft added some safeguards. Interestingly, some of these models develop [capabilities they were not directly trained for](https://arxiv.org/abs/2005.14165), or learn to perform tasks that their smaller counterparts failed at – [emergent capabilities](https://openreview.net/pdf?id=yzkSU5zdwD) – by virtue of having been scaled up.[^1] 
 
 
-## AI causing trouble
+### AI causing trouble
 
 Our current narrow AI systems are already causing some trouble. For example, [AI can exacerbate problems](https://www.weforum.org/agenda/2022/10/open-source-data-science-bias-more-ethical-ai-technology/) caused by our society’s socio-economic biases. This risks amplifying inequities in society, for instance [in our health systems](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6875681/). Another thing that many of us have already experienced, are the effects of algorithmically curated social media feeds on the quality of online discourse. Stuart Russell gives the classic example of social media AI systems trained to maximise clickthrough-rate eventually learning to amplify clickbait and creating filter bubbles – which is, in fact, a very good strategy for maximising clickthrough-rate. We currently do not have any obvious solutions to these problems, and they are likely to get worse as we include AI systems in more and more of our society’s processes. OpenAI itself has warned about the risk of LLM-powered [misinformation campaigns](https://openai.com/research/forecasting-misuse), which seems very possible with current systems.
 
@@ -55,11 +55,11 @@ The social media example is illustrative, because it points to an enormous safet
 In my experience, the above statement is obviously true to some people, and completely out of left field for others. Below I will try my best to sketch out why I think this is something we should be deeply worried about.
 
 
-# Aligning AI
+## Aligning AI
 
 Imagine we succeed in building a very capable AI system using deep learning. As is standard deep learning protocol, we are using lots of data from all kinds of domains to search for an algorithm that does well on some objective. Presumably, we want the objective to be something good for humanity, or sentient life in general. This step alone opens up quite the philosophical can of worms: what kind of trade-offs should we be making? This is not mere armchair philosophy: the self-driving car industry [has been struggling with such questions about ethical trade-offs for years](https://link.springer.com/article/10.1007/s13347-021-00464-5). Choosing the wrong objective here would obviously be bad, since then we'd be dealing with a very capable AI system that is actively working against our goals. This will be recurring theme.
 
-## Outer alignment
+### Outer alignment
 
 Let’s assume we somehow solve – or more likely: circumvent(?) – this issue. We now know what objective we want our AI system to do well on: can we specify a loss function (objective) that achieves this? This is the [outer alignment](https://www.lesswrong.com/tag/outer-alignment) problem. Quoting the linked page:
 
@@ -71,7 +71,7 @@ This phenomenon where an AI system learns behaviour that satisfies the literal s
 
 Okay, what if we somehow solve this issue, such that our trained AI actually does what we want on the training set? Enter [goal misgeneralisation](https://arxiv.org/abs/2105.14111): the AI learns behaviour that seems to follow the correct goal during training, but actually it learned some other goal that your training set could not distinguish from the goal you wanted it to have. Again, there are [plenty examples](https://arxiv.org/abs/2210.01790) of this happening. And again, we'll be dealing with a very capable AI system that is actively working against our goals. Notice the theme?
 
-## Inner alignment
+### Inner alignment
 
 Are we done if we solve this? Nah, there’s also [inner alignment](https://www.lesswrong.com/tag/inner-alignment). This is quite a complex topic, for which a slightly more introductory level post [can be found here](https://www.lesswrong.com/posts/AHhCrJ2KpTjsCSwbt/inner-alignment-explain-like-i-m-12-edition). The basic idea is that optimisation can create internal processes that develop goals/objectives that are not the same as the outer goal/objective.[^4] The technical term for such a process is [mesa-optimiser](https://arxiv.org/pdf/1906.01820.pdf). Human goals can be viewed as an example of an inner alignment failure. Evolution has created us humans through an optimisation process – namely natural selection – with the goal of maximising [inclusive (genetic) fitness](https://en.wikipedia.org/wiki/Inclusive_fitness). Do we – the mesa-optimisers that result from this optimisation process – care about inclusive fitness? I sure don’t. In fact, I didn’t even have a concept of ‘inclusive fitness’ – either intellectually or intuitively – until I learned about evolution. How can I care about something that I don’t even have a concept for? 
 
@@ -79,7 +79,7 @@ Donuts are another alignment failure: sugar, fat, and salt were all  highly-valu
 
 Evolution did its darndest to optimise us to maximise inclusive fitness: the donut example shows it failed to align our behaviours. And the fact that we don’t even have an intuitive concept for inclusive fitness means it failed to align our goals.[^5]
 
-# Existential risk
+## Existential risk
 
 Okay, back to our deep learning system that we are trying to align. We don’t know which objective to give it, how to make sure we actually optimise it for that objective if we did know, and whether this optimisation generalises to new environments – it might not because the behaviours don’t generalise well (donuts), or because it just learned different goals (inclusive fitness). If we don't solve these problems, we'll be dealing with a very capable AI system that is actively working against our goals. That is bad.
 
@@ -87,13 +87,13 @@ Actually, I have been cheating a bit. I have explained why aligning AI is diffic
 
 Strong capabilities ('very capable AI system') means that we need to have actually succeeded at building an AI system that is capable of competently acting in the world so that it can achieve its goals. Different goals require different levels of competence: playing a video game is a lot simpler than manipulating people, but both are possible at some level of competence. One big assumption is that it's possible to build general AI that is more capable than human civilisation at all the relevent tasks ([which need not be _all_ tasks](https://www.cold-takes.com/transformative-ai-timelines-part-1-of-4-what-kind-of-ai/)). This does not seem impossible in principle, but it might be that the deep learning paradigm cannot get us there. That would be a lucky break, because 1) it probably gives us more time to solve the alignment problem(s), and 2) deep learning is the most uninterpretable approach to AI we know.
 
-## Thinking about AI
+### Thinking about AI
 
 In order to explore the point of 'instrumental goals', it’s worth stressing what the field of AI alignment means by ‘intelligence’. The definition that suffices for our purposes is that: *“a system is intelligent to the degree that its actions can be expected to achieve its goals”*. Here intelligence is about achieving goals. The key insight here is not to think of an intelligent system as some book-smart professor that spends their day working on abstract maths problems. When we talk about creating intelligent systems, we’re talking about creating smart optimisers: systems that – given some goal – change the world in such a way that that goal is achieved. People are an example of such optimisers: we have goals, and we think intelligently about how to achieve them. If the goal is difficult enough, we make plans that can span multiple years, we gather allies and resources, and we predict obstacles and try to solve those. If we want to build a road, we talk to the municipality and contractors, we buy materials, we lobby. And if there is an anthill where we want to build the road, we bulldoze the anthill: not because we hate the ants, but because they are in the way of our goal. 
 
 Bulldozing the ants is an example of an [instrumental goal](https://en.wikipedia.org/wiki/Instrumental_and_intrinsic_value). An instrumental goal is any goal that is useful to the pursuit of the actual intrinsic goal (i.e., the thing an agent actually tries to achieve). Typical instrumental goals are self-preservation (if you don’t exist, your goal is less likely to be achieved), gathering resources (more resources means you have more options for achieving your goal), and removing adversaries (adversaries are bad for your chances of achieving your goal), which may include deceiving[^10] or manipulating adversaries. [Instrumental convergence](https://en.wikipedia.org/wiki/Instrumental_convergence) states that goal-directed agents will tend to pursue instrumental goals such as the three mentioned here.[^12] The kind of intelligence that we’re trying to build should be thought of as capable of planning, of gathering resources, and of removing obstacles. We should also keep in mind that it will be very different from humans: it has a different cognitive architecture, and it does not share the evolutionary history that makes us cooperative and empathetic. If such a system becomes capable enough – more capable than humans – and we haven’t programmed it to care about human values, then we'll be dealing with a very capable AI system that is actively working against our goals/values: if the system is sufficiently capable, this means that we end up with a world without these values and without humans. Why? Simply because a more capable system is better at achieving its goals than we are at ours.
 
-## Goal-directed behaviour
+### Goal-directed behaviour
 
 Okay, but do our *current deep learning systems* even have goals to begin with? The obvious answer is that we don’t know, because we don’t actually know very well what goes on in our AI systems. The second obvious answer is that they don’t need to develop goals themselves to pose a risk. Humanity seems very happy to [provide GPT-4 with user-specified goals](https://agentgpt.reworkd.ai/) and [internet access](https://github.com/Significant-Gravitas/Auto-GPT). Giving AI systems goals in plain English – rather than maths – is not necessarily an improvement from a robustness perspective. Also, [I’m sure no one will actually give an AI system a bad goal, ever](https://decrypt.co/126122/meet-chaos-gpt-ai-tool-destroy-humanity).
 
@@ -103,7 +103,7 @@ To start, we might train our AI systems as agents, as we typically do in the fie
 
 Of course, we don’t know whether these mesa-optimisers are pursuing any coherent goals. We don’t know whether our non-agentically trained AI systems might [implement agents](https://arxiv.org/pdf/2209.00626.pdf) as we scale up their capabilities. Paul Christiano, one of the top AI alignment researchers, provides a brief discussion on how LLMs might become goal-directed, [here](https://forum.effectivealtruism.org/posts/dgk2eLf8DLxEG6msd/how-would-a-language-model-become-goal-directed?commentId=cbJDeSPtbyy2XNr8E). The (speculative) possibility of emergent goal-directed behaviour is a reason why, for example, the [science AI](https://yoshuabengio.org/2023/05/07/ai-scientists-safe-and-useful-ai/) suggested by Yoshua Bengio might not be safe (for those interested in further reading: his proposal is an example of a [tool AI](https://www.lesswrong.com/tag/tool-ai)).
 
-## Alignment proposals
+### Alignment proposals
 
 So, we don’t know whether AI systems will develop coherent goals purely through training, but it seems at least possible: this is very worrying. I want to stress here that *there are currently no alignment proposals that the community as a whole expects to work*. It is easy to come up with stories of how things might work out, but for now these all fail in predictable ways.[^6] 
 
@@ -114,7 +114,7 @@ A recurring problem in all this is that we are training our deep learning system
 All of this and more is what many researchers are now sounding the alarm on. In this [2022 survey of machine learning researchers](https://aiimpacts.org/what-do-ml-researchers-think-about-ai-in-2022/), 48% of researchers put the probability that long term effects of advanced AI on humanity are *“extremely bad (e.g., human extinction)”* at 10%.[^7] Note that this survey was run before Sydney/Bing and GPT-4 were released. Since then, many more researchers have publicly expressed their worries, and the world is [finally starting](https://www.bbc.com/news/technology-65139406) to take the problem [more seriously](https://www.euronews.com/next/2023/05/05/joe-biden-and-kamala-harris-meet-with-big-tech-ceos-to-address-ai-risks).
 
 
-# What to do?
+## What to do?
 
 As is hopefully clear now, there are a lot of important [open problems in AI alignment](https://arxiv.org/abs/1606.06565), many of which we’ll need to solve if we want to be sure that future – very capable – AI systems are robustly safe. We need much more research in this field, and there are currently [far fewer researchers](https://forum.effectivealtruism.org/posts/3gmkrj3khJHndYGNe/estimating-the-current-and-future-number-of-ai-safety) working on AI alignment than on AI capabilities. 
 
@@ -133,7 +133,7 @@ If you’re more interested in policy work instead, then have a look at the [AI 
 My personal view is that policy work is an absolutely crucial part of the solution.[^11] The companies (and perhaps in the future: governments) attempting to build ever more capable AI systems need stronger incentives to treat AI alignment as the difficult and hugely important problem it is. Alignment researchers need time to actually make progress on the technical problems, and we may not have that time unless we put the brakes on large AI training runs.[^8]
 
 
-# Closing
+### Closing
 
 This has been my attempt to convey the incredible importance of solving AI alignment in the form of a blog post. When I first read about this problem in 2014, I figured we’d have a long time to solve it: plenty of time to finish my master’s in physics, study a bit more to then do a PhD in machine learning, and get to work on technical alignment research afterwards. The rapid progress in deep learning over the past ten years has changed my views on this, and as a result I’ve been trying to create more awareness by [speaking](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence) and -- now -- blogging. It’s been surreal to see the [Overton window](https://en.wikipedia.org/wiki/Overton_window) around AI risk widened so quickly over the past months, and I’m very happy that big names in the research community – such as Geoffrey Hinton – are speaking out. There is much more to say and far more to do(!), but this post is already much longer than I intended it to be.
 
