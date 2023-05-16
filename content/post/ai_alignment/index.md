@@ -25,7 +25,7 @@ image:
 
 > Epistemic status: In this post I will try to argue that AI alignment is important and that it is difficult. That is a lot of ground to cover, so not all arguments will be very precise, or assume the same level of technical background. Opinions on exactly how important and/or difficult the alignment problem is vary a lot within the machine learning community, and even within the AI alignment field itself (although, as you’d expect, much less). As a result: keep in mind that this blog post is very much slanted towards my own views on the topic.
 
-> My thanks to Nikita Bortych, Fokel Ellen, Sam Ritchie, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.
+> My thanks to Nikita Bortych, Fokel Ellen, Sam Ritchie, Nandi Robijns, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.
 
 So. AI alignment.
 
