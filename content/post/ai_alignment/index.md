@@ -33,9 +33,9 @@ image:
 
 So. AI alignment.
 
-My reason for writing this post is, very simply, that I'm worried about the risks of humanity building increasingly capable AI systems. I hope that I can raise awareness of the problem by writing and speaking out more.
+I am writing this post because I am immensely worried about the risks that come with building increasingly capable AI systems.
 
-Why write my own post? Why not just refer to one of the many others available online? There's one thing I haven't seen many existing articles do: present a complete argument for why we should be worried while straddling the line between 1) understandability for non-AI experts, and 2) sufficient technical detail for AI experts. This article is meant both for laypeople who want to better understand why we might expect things to go badly, as well as for machine learning researchers who want to see the whole argument written down in one place so that they can evaluate it for themselves. Of course, I cannot nearly cover everything in a single blog post. To compensate, I've included links to additional information and further reading throughout for those interested. Even so, this post mostly discusses the technical issues, although the wider problem is also very much one of policy and governance: I will touch on this throughout as well.
+Why write my own post? Why not just refer to one of the many that are (now, *finally*) available online? That's because there's one thing I haven't seen many existing articles do: present a complete argument for why we should be worried while straddling the line between 1) understandability for non-AI experts, and 2) sufficient technical detail for AI experts. This article is meant both for laypeople who want to better understand why we might expect things to go badly, as well as for machine learning researchers who want to see the whole argument written down in one place so that they can evaluate it for themselves. Of course, I cannot nearly cover everything in a single blog post. To compensate, I've included links to additional information and further reading throughout for those interested. Even so, this post mostly discusses the technical issues, although the wider problem is also very much one of policy and governance: I will touch on this throughout as well.
 
 To start, what is AI alignment?
 
