@@ -21,11 +21,15 @@ image:
   alt_text: An alien actress imitating humans.
 ---
 
+> Credit for the cover image goes to [Anna Husfeldt](https://thorehusfeldt.com/2023/03/02/reinforcement-learning-using-human-feedback-is-putting-smileys-on-a-shoggoth/).
+
+
 [< Previous post](https://www.tbbakker.nl/post/ml_priors/)
+
 
 > *Epistemic status: In this post, I will try to argue that AI alignment is important and that it is difficult. That is a lot of ground to cover, so not all arguments will be very precise, or assume the same level of technical background. Opinions on exactly how important and/or difficult the alignment problem is vary a lot within the machine learning community, and even within the AI alignment field itself (although, as you’d expect, much less). As a result: keep in mind that this blog post is very much slanted towards my views on the topic.*
 
-> My thanks to Otto Barten, Leonard Bereska, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez-López, Nandi Robijns, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.
+`My thanks to Otto Barten, Leonard Bereska, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez-López, Nandi Robijns, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.`
 
 So. AI alignment.
 
@@ -177,7 +181,6 @@ This has been my attempt to convey the incredible importance of solving AI align
 Feel free to [contact me](https://www.tbbakker.nl/) with any related questions or requests.
 
 
-> Credit for the cover image goes to [Anna Husfeldt](https://thorehusfeldt.com/2023/03/02/reinforcement-learning-using-human-feedback-is-putting-smileys-on-a-shoggoth/).
 
 
 [^1]: How models acquire these capabilities is a topic of active research, but those of you who’ve read the previous blog posts may have guessed part of my own suspicion: simplicity prior + lots of data = learning rules that generalise to new tasks. Say we are ChatGPT and we want to predict the next word in sentences where a person is writing angrily. During training, we can learn good predictions (on the training data) in roughly two ways: 1) memorise the training data, 2) learn a rule that generates the training data; e.g., learn to detect when a person’s writing is angry and then predict that angry people are more likely to use insults. We want 2), because 1) does not generalise to new data (or tasks) at all. How can we achieve this? Remember Bayes’ theorem (in log space for simplicity): posterior = likelihood + prior. The hypothesis that memorises all the data is hugely complex – in the information-theoretic sense – compared to the hypothesis that a simple rule explains the training data, and so the model will tend to the latter assuming it has seen enough data. This is because the prior on the latter hypothesis is stronger, while the likelihood is similar (both hypotheses nearly perfectly explain the training data).[^2] In our angry writing example we will need to see a lot of data because the concept of ‘anger’ is not simple to specify, but as we see more and more data it does become simpler than ‘memorise all the data’.
