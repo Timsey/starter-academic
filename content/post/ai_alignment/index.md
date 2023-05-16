@@ -38,7 +38,7 @@ To start, what is AI alignment?
 That's the goal. Aligning AI systems is surprisingly difficult, which is a big part of what has the research community worried. We'll explore the details of this step by step:
 
 1. **Sounding the alarm.** Setting the stage: many AI researchers are suddenly worried.
-2. **What is AI.** How are AI systems created, what can they do, and what problems are we already seeing?
+2. **What is AI?** How are AI systems created, what can they do, and what problems are we already seeing?
 3. **Aligning AI.** What are the difficulties with aligning AI? This is the most technical section, and the easiest to skip.
 4. **Existential risk.** Why is unaligned AI existentially dangerous to humanity?
 5. **What to do?** A call to action. What can you do as layperson, as someone working in policy, or as a researcher?
