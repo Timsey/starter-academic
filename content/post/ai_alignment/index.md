@@ -71,7 +71,7 @@ That is worth repeating: *no one knows exactly why a deep learning system does w
 
 > **Continuing to build more capable AI systems when we understand so little of what goes on in the models has the potential to lead to existentially dangerous scenarios**. 
 
-In my experience, the above statement sounds obvious to some people, and completely out of left field for others. Below I will try my best to sketch out why I think this is something we should be deeply worried about.
+In my experience, the above statement sounds obvious to some people, and completely out of left field for others. Below I will sketch out why I think this is something we should be deeply worried about.
 
 
 ## Aligning AI
