@@ -1,6 +1,6 @@
 ---
 title: AI alignment
-subtitle: The most important problem facing humanity.
+subtitle: The enormous problem facing humanity.
 date: 2023-05-14T19:00:00.000Z
 summary: My views on the importance and difficulty of the AI alignment problem.
 draft: false
@@ -29,7 +29,7 @@ image:
 
 > *Epistemic status: In this post, I will try to argue that AI alignment is important and that it is difficult. That is a lot of ground to cover, so not all arguments will be very precise, or assume the same level of technical background. Opinions on exactly how important and/or difficult the alignment problem is vary a lot within the machine learning community, and even within the AI alignment field itself (although, as you’d expect, much less). As a result: keep in mind that this blog post is very much slanted towards my views on the topic.*
 
-*My thanks to Otto Barten, Leonard Bereska, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez-López, Nandi Robijns, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.*
+*My thanks to Otto Barten, Jim Boelrijk, Leonard Bereska, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez-López, Nandi Robijns, Joris Schefold, Marieke de Visser, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.*
 
 So. AI alignment.
 
