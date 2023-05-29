@@ -29,7 +29,7 @@ image:
 
 > *Epistemic status: In this post, I will argue that AI alignment is important and that it is difficult. That is a lot of ground to cover, so not all arguments will be very precise or assume the same level of technical background. Opinions on exactly how important and/or difficult the alignment problem is vary a lot within the machine learning community, and even within the AI alignment field itself (although, as you’d expect, much less). As a result: keep in mind that this blog post is very much slanted towards my views on the topic.*
 
-*My thanks to Otto Barten, Jim Boelrijk, Leonard Bereska, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez López, Nandi Robijns, Joris Schefold, Marieke de Visscher, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.*
+*My thanks to Otto Barten, Leonard Bereska, Jim Boelrijk, Nynke Boiten, Nikita Bortych, Mariska van Dam, Fokel Ellen, Isaak Mengesha, Sam Ritchie, Victoria Ramírez López, Nandi Robijns, Joris Schefold, Marieke de Visscher, Tina Wünn, and especially Leon Lang and Max Oosterbeek for providing feedback. Opinions and mistakes are mine.*
 
 So. AI alignment.
 
@@ -216,5 +216,5 @@ Feel free to [contact me](https://www.tbbakker.nl/) with any related questions o
 
 [^15]: Preventing this is another reason we need to do more (mechanistic) interpretability research, as understanding the system's internals would help with understanding what it is optimising towards.
 
-[^16]: Shortly after this blog post was published, a collaboration of ARC, Anthropic, DeepMind, OpenAI and multiple universities and safety institutes released the paper [Model evaluation for extreme risks (2023)](https://arxiv.org/pdf/2305.15324.pdf). Their proposed theory of change for *model evaluations for extreme risk* should be extremely useful to policy makers looking to create regulation for ensuring safer deployment of highly capable AI models.
+[^16]: Shortly after this blog post was published, a collaboration of ARC, Anthropic, DeepMind, OpenAI and multiple universities and safety institutes released the paper [*Model evaluation for extreme risks* (2023)](https://arxiv.org/pdf/2305.15324.pdf). Their proposed theory of change for *model evaluations for extreme risk* should be extremely useful to policy makers looking to create regulation for ensuring safer deployment of highly capable AI models.
 
