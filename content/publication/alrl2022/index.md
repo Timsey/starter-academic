@@ -48,8 +48,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://openreview.net/pdf?id=aDh1Q2TfTV'
-url_code: ''
+url_pdf: 'https://arxiv.org/abs/2309.05477'
+url_code: 'https://github.com/Timsey/npal'
 url_dataset: ''
 url_poster: ''
 url_project: ''
