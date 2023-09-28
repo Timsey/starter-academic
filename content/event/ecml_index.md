@@ -2,7 +2,7 @@
 title: Learning objective-specific active learning strategies with Attentive Neural Processes
 
 event: Presentation at European Conference on Machine Learning and Principles and Practice of Knowledge Discovery (ECML, 2023)
-event_url: []
+event_url: https://2023.ecmlpkdd.org/program/paper-session-overview/program-21-september-2023/
 
 location: Polytechnic University of Turin
 # address:
