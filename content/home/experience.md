@@ -29,7 +29,7 @@ experience:
     company_url: 'https://www.qualcomm.com/research/artificial-intelligence'
     location: Amsterdam
     date_start: '2023-05-04'
-    date_end: ''
+    date_end: '2023-09-08'
     description: Research internship on machine learning for physics simulators.
   - title: Research intern
     company: Facebook AI Research
