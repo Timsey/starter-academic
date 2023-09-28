@@ -12,7 +12,7 @@ location: ETH Zurich
 #  postcode: '94305'
 #  country: United States
 
-summary: MIDL presentation on the paper "On learning adaptive acquisition policies for undersampled multi-coil MRI reconstruction" from the Facebook AI Research internship.
+summary: Presentation on our MIDL 2022 paper "On learning adaptive acquisition policies for undersampled multi-coil MRI reconstruction" from my Facebook AI Research internship.
 #abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
