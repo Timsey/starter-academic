@@ -24,6 +24,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Organiser
+    company: AI Safety Initiative Amsterdam 
+    company_url: 'https://aisafetyamsterdam.com/'
+    location: Amsterdam
+    date_start: '2023-09-27'
+    date_end: ''
+    description: We are an organization in Amsterdam dedicated to promoting AI Safety. Our goal is to create awareness and educate about the importance of AI Safety research.
   - title: Guide and organiser
     company: Effective Altruism Meditation
     company_url: 'https://eameditation.org'
