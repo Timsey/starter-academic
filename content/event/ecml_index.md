@@ -12,7 +12,7 @@ location: Polytechnic University of Turin
 #  country: Netherlands
 #  region: CA
 
-summary: Presentation on our 2023 paper "Learning objective-specific active learning strategies with Attentive Neural Processes".
+summary: Presentation on our ECML 2023 paper "Learning objective-specific active learning strategies with Attentive Neural Processes".
 #abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
