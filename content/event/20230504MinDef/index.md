@@ -2,7 +2,7 @@
 title: Existential Risks of Artificial Intelligence
 
 event: Presentation at Cyber Innovation Hub, Dutch Ministry of Defence
-event_url:
+event_url: []
 
 location: Dutch Ministry of Defence, Den Haag
 # address:
