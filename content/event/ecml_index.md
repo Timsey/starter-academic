@@ -17,12 +17,12 @@ summary: Presentation on our 2023 paper "Learning objective-specific active lear
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-05-04T13:00:00Z"
+date: "2023-09-21T10:30:00Z"
 #date_end: "2023-05-04T14:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2023-03-18T00:00:00Z"
+publishDate: "2023-09-18T00:00:00Z"
 
 authors: []
 tags: []
