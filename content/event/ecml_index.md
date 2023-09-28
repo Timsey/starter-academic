@@ -1,10 +1,10 @@
 ---
-title: Existential Risks of Artificial Intelligence
+title: Learning objective-specific active learning strategies with Attentive Neural Processes
 
-event: Presentation at Cyber Innovation Hub, Dutch Ministry of Defence
-event_url:
+event: Presentation at European Conference on Machine Learning and Principles and Practice of Knowledge Discovery (ECML, 2023)
+event_url: []
 
-location: Dutch Ministry of Defence, Den Haag
+location: Polytechnic University of Turin
 # address:
 #  street: Kalvermarkt 32
 #  postcode: 2511 CB
@@ -12,7 +12,7 @@ location: Dutch Ministry of Defence, Den Haag
 #  country: Netherlands
 #  region: CA
 
-summary: Presentation on the existential risks of artificial intelligence for the Cyber Innovation Hub of the Dutch Ministry of Defence.
+summary: Presentation on our 2023 paper "Learning objective-specific active learning strategies with Attentive Neural Processes".
 #abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
 
 # Talk start and end times.
