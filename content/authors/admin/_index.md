@@ -1,8 +1,7 @@
 ---
 title: Tim Bakker
 role: PhD researcher in Machine Learning
-bio: My research interests include active learning/sensing, reinforcement learning, ML for simulations, and
-  everything Bayesian.
+bio: My research interests include AI alignment, active learning/sensing, reinforcement learning, ML for simulations, and everything Bayesian.
 interests: 
   - Active learning / sensing
   - AI alignment
@@ -42,7 +41,7 @@ email: "t.b.bakker@uva.nl"
 superuser: true
 highlight_name: false
 ---
-I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research primarily focuses on active learning and active sensing for high-tech applications, such as MRI and molecular simulations. Currently on research internship at Qualcomm AI, previously at Facebook AI Research (FAIR).
+I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.uva.nl) with [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) and [Max Welling](https://staff.fnwi.uva.nl/m.welling/). My research primarily focuses on active learning and active sensing for high-tech applications, such as MRI and molecular simulations. Completed research internships at Facebook AI Research (FAIR) and Qualcomm AI Research.
 
 Other interests include everything Bayesian, [effective altruism](https://www.eaamsterdam.org/), and [musical theater](https://www.hetaspk.nl/).
 
