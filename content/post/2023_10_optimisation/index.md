@@ -1,7 +1,7 @@
 ---
 title: Risky optimisation
 subtitle: AI risk viewed through the lens of optimisation.
-date: 2023-10-18T16:00:00.000Z
+date: 2023-10-18T00:00:00.000Z
 summary: Viewing AI risk through the lens of optimisation provides intuitions for why AI risk is a problem, and how it might be solved.
 draft: false
 featured: true
@@ -28,7 +28,7 @@ image:
 [< Previous post](https://www.tbbakker.nl/post/2023_05_alignment/)
 
 
-> Epistemic status: trying to convey an intuition. I’ll be oversimplifying complex systems for the sake of clarity. The goal is to convey a notion of “here is a shared quality of optimisation processes that makes me worry about the current AI trajectory”. This post assumes some prior knowledge of basic machine learning and also of AI risk, see for instance [my previous blog post](https://www.tbbakker.nl/post/ai_alignment/).
+> *Epistemic status: trying to convey an intuition. I’ll be oversimplifying complex systems for the sake of clarity. The goal is to convey a notion of “here is a shared quality of optimisation processes that makes me worry about the current AI trajectory”. This post assumes some prior knowledge of basic machine learning and also of AI risk, see for instance [my previous blog post](https://www.tbbakker.nl/post/ai_alignment/).*
 
 The [law of the instrument](https://en.wikipedia.org/wiki/Law_of_the_instrument) states: “If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail.” As a machine learning researcher in the deep learning era, the main tool I have is optimisation with stochastic gradient descent. As a result, everything looks like an optimisation landscape.[^1] We will see some examples of this later.
 
