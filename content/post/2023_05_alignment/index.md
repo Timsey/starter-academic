@@ -24,7 +24,7 @@ image:
 > Credit for the cover image goes to [Anna Husfeldt](https://thorehusfeldt.com/2023/03/02/reinforcement-learning-using-human-feedback-is-putting-smileys-on-a-shoggoth/).
 
 
-[< Previous post](https://www.tbbakker.nl/post/2023_04_ml_priors/)
+[< Previous post](https://www.tbbakker.nl/post/2023_05_ml_priors/)
 
 
 > *Epistemic status: In this post, I will argue that AI alignment is important and that it is difficult. That is a lot of ground to cover, so not all arguments will be very precise or assume the same level of technical background. Opinions on exactly how important and/or difficult the alignment problem is vary a lot within the machine learning community, and even within the AI alignment field itself (although, as you’d expect, much less). As a result: keep in mind that this blog post is very much slanted towards my views on the topic.*

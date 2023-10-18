@@ -21,7 +21,7 @@ image:
   alt_text: Image by Andrew Wilson and Pavel Izmailov
 ---
 
-[< Previous post](https://www.tbbakker.nl/post/2021_04_ml_priors/)
+[< Previous post](https://www.tbbakker.nl/post/2021_04_bayes2ml/)
 
 > *Epistemic status: lots of handwaveyness connecting our prior knowledge to our ML design choices.*  
   
