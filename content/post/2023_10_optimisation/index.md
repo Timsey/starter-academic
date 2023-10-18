@@ -1,7 +1,7 @@
 ---
 title: Risky optimisation
 subtitle: AI risk viewed through the lens of optimisation.
-date: 2023-010-18T16:00:00.000Z
+date: 2023-10-18T16:00:00.000Z
 summary: Viewing AI risk through the lens of optimisation provides intuitions for why AI risk is a problem, and how it might be solved.
 draft: false
 featured: true
@@ -25,7 +25,7 @@ image:
 
 > Comic by [skeletonclaw](https://www.skeletonclaw.com/), seen on the [Princeton AI Safety course website](https://sites.google.com/view/cos598aisafety/).
 
-[< Previous post](https://www.tbbakker.nl/post/ai_alignment/)
+[< Previous post](https://www.tbbakker.nl/post/2023_05_alignment/)
 
 
 > Epistemic status: trying to convey an intuition. I’ll be oversimplifying complex systems for the sake of clarity. The goal is to convey a notion of “here is a shared quality of optimisation processes that makes me worry about the current AI trajectory”. This post assumes some prior knowledge of basic machine learning and also of AI risk, see for instance [my previous blog post](https://www.tbbakker.nl/post/ai_alignment/).

@@ -109,7 +109,7 @@ Luckily, it does seem to be the case that the kind of problems we encounter have
 
 When explicitly reasoning using Bayes' theorem, the trick is then to translate these regularities / this inductive bias / this prior information into actual priors $p(\mathcal{H}|\mathcal{I})$, which is one of hard problems mentioned previously. A nice tidbit is that one of the methods for doing this - [the principle of maximum entropy](https://en.wikipedia.org/wiki/Principle_of_maximum_entropy) - also gives us some results from statistical mechanics for free. More on this - you guessed it - another time.
 
-[Next post >](https://www.tbbakker.nl/post/bayes_ml/)
+[Next post >](https://www.tbbakker.nl/post/2021_04_bayes_ml/)
 
 [^1]: Strictly speaking it might be better to call $\frac{p(B|A)}{p(B)}$ - rather than $p(B|A)$ - the new information, since the logarithm of this is in expectation equal to the mutual information $I(A;B)$ between $A$ and $B$: a measure for how much we learn about $A$ after observing $B$.
 

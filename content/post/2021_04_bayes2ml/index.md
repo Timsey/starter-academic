@@ -21,7 +21,7 @@ image:
   alt_text: Image by xkcd
 ---
 
-[< Previous post](https://www.tbbakker.nl/post/bayes_commentary/)
+[< Previous post](https://www.tbbakker.nl/post/2021_03_bayes_commentary/)
 
 > *Epistemic status: I'm not an expert on many of the machine learning methods mentioned, and the discussion is primarily conceptual. Expect some abuse of notation. I will use the word 'true' a lot, which here means something along the lines of 'corresponding to actual states of the universe'.*
 
@@ -104,7 +104,7 @@ Part of the answer is that we can't and we shouldn't: for many applications unce
 
 Additionally, we haven't discussed some important complexities surrounding prior information. The MLE formulation doesn't talk about priors explicitly, but the above shows that it implicitly uses a uniform prior over the parameters. This is far from the full story however, as in practice a lot of our prior information enters as modelling choices, which induce their own kind of inductive bias: more on this in the next post.
 
-[Next post >](https://www.tbbakker.nl/post/ml_priors/)
+[Next post >](https://www.tbbakker.nl/post/2023_05_ml_priors/)
 
 [^1]: Machine learning textbooks typically distinguish between the model class and the parameters of the model. In our example, the Normal distribution assumption would be a model, and the various $\mu, \sigma$ values would be considered parameters of that model. This is a type of hierarchy in what I've chosen to just call hypotheses here: any model plus specific parameter setting defines an hypothesis, and in principle we could just as easily do Bayesian inference on that space directly. In practice, the hierarchy can simplify the procedure, but adding the extra level - in my opinion - hides the elegance of the formalism. 
 
