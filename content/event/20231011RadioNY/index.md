@@ -2,7 +2,7 @@
 title: New York WHCR radio appearance
 
 event: Community & Technology on WHCR-FM 90.3
-event_url: https://www.youtube.com/watch?v=IKRvQPiYzLM
+event_url: https://whcr.org/artists/community-technology/
 
 location: Online
 # address:
@@ -42,7 +42,7 @@ links:
 #url_code: ""
 #url_pdf: ""
 #url_slides: ""
-url_video: "https://www.youtube.com/watch?v=vGQDctxwy2E"
+url_video: "https://www.youtube.com/watch?v=IKRvQPiYzLM"
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
