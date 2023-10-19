@@ -1,5 +1,5 @@
 ---
-title: New York WHCR radio: AI with Tim Bakker
+title: New York WHCR radio; AI with Tim Bakker
 
 event: Community & Technology on WHCR-FM 90.3
 event_url: https://whcr.org/artists/community-technology/
