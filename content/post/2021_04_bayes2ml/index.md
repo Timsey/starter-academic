@@ -25,7 +25,7 @@ image:
 
 > *Epistemic status: I'm not an expert on many of the machine learning methods mentioned, and the discussion is primarily conceptual. Expect some abuse of notation. I will use the word 'true' a lot, which here means something along the lines of 'corresponding to actual states of the universe'.*
 
-In the [previous post](https://www.tbbakker.nl/post/bayes_commentary/) we discussed how objective Bayesian inference prescribes using Bayes' theorem to learn about the world: $p(\mathcal{H}|\mathcal{D}, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
+In the [previous post](https://www.tbbakker.nl/post/2021_03_bayes_commentary/) we discussed how objective Bayesian inference prescribes using Bayes' theorem to learn about the world: $p(\mathcal{H}|\mathcal{D}, \mathcal{I}) = \frac{p(\mathcal{H}|\mathcal{I}) p(\mathcal{D}|\mathcal{H}, \mathcal{I})}{p(\mathcal{D}|\mathcal{I})}$.
 
 This first requires specifying a specific prior distribution $p(\mathcal{H}|\mathcal{I})$ over all (possible) hypotheses $\mathcal{H}$ given your prior information $\mathcal{I}$. This prior defines an inductive bias on the inference problem, and all that remains is to observe data $\mathcal{D}$, compute the likelihood $p(\mathcal{D}|\mathcal{H}, \mathcal{I})$ for all hypotheses $\mathcal{H}$ (typically specified by $\mathcal{H}$ itself), and finally use Bayes' theorem to obtain the posterior distribution $p(\mathcal{H}|\mathcal{D}, \mathcal{I})$, which represents the unique correct description of your current state of information about the world. 
 
