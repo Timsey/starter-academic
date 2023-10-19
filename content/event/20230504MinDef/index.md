@@ -1,5 +1,5 @@
 ---
-title: Existential Risks of Artificial Intelligence
+title: Seminar on the Risks of AI
 
 event: Presentation at Cyber Innovation Hub, Dutch Ministry of Defence
 event_url: []

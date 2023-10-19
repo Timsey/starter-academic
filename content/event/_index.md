@@ -10,6 +10,6 @@ view: 2
 
 # Optional header image (relative to `static/media/` folder).
 header:
-  caption: "Panel discussion on AI risks at Pakhuis de Zwijger, Amsterdam."
-  image: "headers/dezwijger.png"
+  caption: ""
+  image: ""
 ---

@@ -1,10 +1,10 @@
 ---
-title: UvA Academic Panel on AI Risks
+title: Academic Panel on AI Risks
 
-event: Panel at the University of Amsterdam
+event: Academic panel on AI risk at the University of Amsterdam
 event_url: https://aisafetyamsterdam.com/panel-discussion-on-ai-safety
 
-location: Science Park 904, Amsterdam
+location: Science Park 904, University of Amsterdam
 # address:
 # street: Piet Heinkade 179
 # postcode: 1019 HC

@@ -1,5 +1,5 @@
 ---
-title: Existential Risks of Artificial Intelligence
+title: Panel on the Existential Risks of AI
 
 event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence
