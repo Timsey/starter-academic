@@ -2,7 +2,7 @@
 title: Risky optimisation
 subtitle: AI risk viewed through the lens of optimisation.
 date: 2023-10-18T00:00:00.000Z
-summary: Viewing AI risk through the lens of optimisation provides intuitions for why AI risk is a problem and for what potential solutions must do.
+summary: Viewing AI risk through the lens of optimisation provides intuitions for why AI risk is a problem and for what potential solutions must achieve.
 draft: false
 featured: true
 
