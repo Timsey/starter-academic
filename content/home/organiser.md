@@ -11,7 +11,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 59
 
-title: Organiser
+title: Volunteering
 subtitle:
 
 # Date format for experience
