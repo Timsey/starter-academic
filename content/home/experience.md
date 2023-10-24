@@ -30,28 +30,28 @@ experience:
     location: Amsterdam
     date_start: '2023-05-04'
     date_end: '2023-09-08'
-    description: Research internship on reinforcement learning for efficient inverse problems optimisation.
+    description: Research internship on reinforcement learning for efficient optimisation of inverse problems.
   - title: Research intern
     company: Facebook AI Research
     company_url: 'https://ai.facebook.com'
     location: Montreal (remote)
     date_start: '2021-06-07'
     date_end: '2021-10-07'
-    description: Research internship on reinforcement learning for adaptive subsampling in Magnetic Resonance Imaging.
+    description: Research internship on learning adaptive subsampling in Magnetic Resonance Imaging (MRI).
   - title: PhD researcher
     company: AMLab, University of Amsterdam
     company_url: 'https://amlab.science.uva.nl'
     location: Amsterdam
     date_start: '2019-03-01'
     date_end: ''
-    description: Active learning and active sensing, reinforcement learning, and Bayesian methods.
+    description: Active learning and active sensing, reinforcement learning, Bayesian methods, and AI alignment.
   - title: Machine Learning Engineer
     company: BrainCreators
     company_url: 'https://www.braincreators.com'
     location: Amsterdam
     date_start: '2017-09-01'
     date_end: '2019-02-01'
-    description: Engineer and consultant on a variety to topics from object detection to NLP.
+    description: Engineer and consultant on a variety to topics; from active learning and clustering to object detection and natural language processing.
     
 #    description: |2-
 #    Responsibilities include:
