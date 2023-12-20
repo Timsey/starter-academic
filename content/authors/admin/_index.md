@@ -45,6 +45,6 @@ I'm a PhD student at the [Amsterdam Machine Learning lab](https://amlab.science.
 
 Other interests include [AI alignment](https://www.tbbakker.nl/post/2023_05_alignment/), [everything Bayesian](https://www.tbbakker.nl/post/2021_03_bayes_commentary/), [effective altruism](https://www.effectivealtruism.org/), and musical theater.
 
-I have recently spoken about the (existential) risks of AI at [Pakhuis de Zwijger](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence), the Dutch Ministry of Defence, and the [University of Amsterdam](https://aisafetyamsterdam.com/panel-discussion-on-ai-safety). Please reach out if you're interested in a similar talk.
+I have recently spoken about the (existential) risks of AI at the Dutch National AI Debate, [Pakhuis de Zwijger](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence), the Dutch Ministry of Defence, and the [University of Amsterdam](https://aisafetyamsterdam.com/panel-discussion-on-ai-safety).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
