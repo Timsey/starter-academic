@@ -88,7 +88,7 @@ show_related = {book = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "t.b.bakker@uva.nl"
+email = "t.b.bakker@uva.nl; tim_bb@hotmail.com"
 phone = ""
 
 # Address
