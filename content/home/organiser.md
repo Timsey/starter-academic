@@ -24,8 +24,8 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Organiser
-    company: AI Safety Initiative Amsterdam 
+  - title: Advisory board member
+    company: AI Safety Amsterdam 
     company_url: 'https://aisafetyamsterdam.com/'
     location: Amsterdam
     date_start: '2023-09-27'
@@ -57,7 +57,7 @@ experience:
     company_url: 'https://www.hetaspk.nl/'
     location: Amsterdam
     date_start: '2018-10-01'
-    date_end: ''
+    date_end: '2024-01-01'
     description: The activities committee is responsible for organising regular events for ASPK members with the aim of fostering group cohesion and fun. Events we've organised include Christmas carolling, pub quizzes, and oper(ett)a viewings.
   - title: Interim board member
     company: Amsterdams Studentenprojectkoor (ASPK)
@@ -80,7 +80,7 @@ experience:
     date_start: '2016-07-01'
     date_end: '2018-07-01'
     description: We met every few weeks to philosophise, discuss cognitive biases, and learn techniques for dealing with the latter.
-  - title: Organiser
+  - title: Community organiser
     company: Effective Altruism Netherlands
     company_url: 'https://effectiefaltruisme.nl/en/'
     location: Netherlands
