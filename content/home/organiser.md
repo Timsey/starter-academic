@@ -45,7 +45,7 @@ experience:
     date_start: '2019-05-20'
     date_end: ''
     description: As an IAI mentor, I help members navigate the academic and non-academic world during and after their Master AI programme.
-  - title: Board member
+  - title: Organising board member
     company: Inclusive AI
     company_url: 'https://uva-iai.github.io'
     location: Amsterdam
