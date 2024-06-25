@@ -1,5 +1,5 @@
 ---
-title: Panel on the Existential Risks of AI
+title: Panel on the Existential Risks of AI with prof. Roman Yampolskiy
 
 event: Panel at Pakhuis de Zwijger
 event_url: https://dezwijger.nl/programma/the-future-of-ai-too-much-to-handle
