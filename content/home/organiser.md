@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Chair
+  - title: Chair of the board
     company: Amsterdams Studentenprojectkoor (ASPK)
     company_url: 'https://www.hetaspk.nl/'
     location: Amsterdam
@@ -52,15 +52,15 @@ experience:
     date_start: '2019-05-20'
     date_end: ''
     description: As an IAI mentor, I help members navigate the academic and non-academic world during and after their Master AI programme.
-  - title: Organising board member
+  - title: Board member
     company: Inclusive AI
     company_url: 'https://uva-iai.github.io'
     location: Amsterdam
     date_start: '2019-05-20'
     date_end: '2021-10-01'
     description: The IAI is an inclusive space for members to receive non-academic help from senior peers in the field and connect with people of various backgrounds. As a board member I thought about ways to make IAI more effective at combating the 'leaky-pipeline' problem of AI industry and academia, and organised events to give our mentees a head-start.
-  - title: Chair and organiser
-    company: Amsterdams Studentenprojectkoor (ASPK) activities committee
+  - title: Chair of the activities committee
+    company: Amsterdams Studentenprojectkoor (ASPK)
     company_url: 'https://www.hetaspk.nl/'
     location: Amsterdam
     date_start: '2018-10-01'
