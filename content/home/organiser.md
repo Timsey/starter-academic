@@ -30,7 +30,7 @@ experience:
     location: Amsterdam
     date_start: '2024-07-11'
     date_end: ''
-    description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch.
+    description: The ASPK is an Amsterdam-based amateur choir and theatre association that performs operettas in Dutch.
   - title: Advisory board member
     company: AI Safety Amsterdam 
     company_url: 'https://aisafetyamsterdam.com/'
