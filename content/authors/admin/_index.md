@@ -47,4 +47,4 @@ Other interests include [AI safety](https://www.tbbakker.nl/post/2023_05_alignme
 
 I am concerned about the risks of [transformative AI](https://www.tbbakker.nl/post/2023_05_alignment/), and have spoken on this at the Dutch National AI Debate, [Pakhuis](https://dezwijger.nl/programma/existential-risks-of-artificial-intelligence) de [Zwijger](https://dezwijger.nl/programma/the-future-of-ai-too-much-to-handle), the Dutch Ministry of Defence, and the [University of Amsterdam](https://aisafetyamsterdam.com/events/2023_10_18/).
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}} (generally not as up-to-date as this website).
