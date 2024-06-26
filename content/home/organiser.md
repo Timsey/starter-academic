@@ -24,6 +24,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Chair
+    company: Amsterdams Studentenprojectkoor (ASPK)
+    company_url: 'https://www.hetaspk.nl/'
+    location: Amsterdam
+    date_start: '2024-07-11'
+    date_end: ''
+    description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch.
   - title: Advisory board member
     company: AI Safety Amsterdam 
     company_url: 'https://aisafetyamsterdam.com/'
@@ -58,14 +65,14 @@ experience:
     location: Amsterdam
     date_start: '2018-10-01'
     date_end: '2024-01-01'
-    description: The activities committee is responsible for organising regular events for ASPK members with the aim of fostering group cohesion and fun. Events we've organised include Christmas carolling, pub quizzes, and oper(ett)a viewings.
-  - title: Interim board member
-    company: Amsterdams Studentenprojectkoor (ASPK)
-    company_url: 'https://www.hetaspk.nl/'
-    location: Amsterdam
-    date_start: '2018-11-01'
-    date_end: '2019-02-01'
-    description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch. As interim board member I updated our statutes, wrote summaries for PR material, and performed a general assisting role.
+    description: The activities committee is responsible for organising regular events for ASPK members with the aim of fostering group cohesion and fun.
+  # - title: Interim board member
+  #   company: Amsterdams Studentenprojectkoor (ASPK)
+  #   company_url: 'https://www.hetaspk.nl/'
+  #   location: Amsterdam
+  #   date_start: '2018-11-01'
+  #   date_end: '2019-02-01'
+  #   description: The ASPK is an Amsterdam-based, student-lead amateur choir and association that performs yearly operettas in Dutch.
   - title: Founder and organiser
     company: Effective Altruism Amsterdam
     company_url: 'https://www.eaamsterdam.org/'
