@@ -2,7 +2,7 @@
 title: Academic Panel on AI Risks
 
 event: Academic panel on AI risk at the University of Amsterdam
-event_url: https://aisafetyamsterdam.com/panel-discussion-on-ai-safety
+event_url: https://aisafetyamsterdam.com/events/2023_10_18/
 
 location: Science Park 904, University of Amsterdam
 # address:
