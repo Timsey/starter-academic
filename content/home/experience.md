@@ -24,6 +24,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Senior ML researcher
+    company: Qualcomm AI
+    company_url: 'https://www.qualcomm.com/research/artificial-intelligence'
+    location: Amsterdam
+    date_start: '2023-09-16'
+    date_end: ''
+    description: I do research on LLM reasoning, reinforcement learning, and AI safety.
   - title: Research intern
     company: Qualcomm AI
     company_url: 'https://www.qualcomm.com/research/artificial-intelligence'
@@ -43,7 +50,7 @@ experience:
     company_url: 'https://amlab.science.uva.nl'
     location: Amsterdam
     date_start: '2019-03-01'
-    date_end: ''
+    date_end: '2024-05-04'
     description: Active learning and active sensing, reinforcement learning, Bayesian methods, and AI alignment.
   - title: Machine Learning Engineer
     company: BrainCreators
