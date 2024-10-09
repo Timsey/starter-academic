@@ -28,7 +28,7 @@ experience:
     company: Qualcomm AI
     company_url: 'https://www.qualcomm.com/research/artificial-intelligence'
     location: Amsterdam
-    date_start: '2023-09-16'
+    date_start: '2024-09-16'
     date_end: ''
     description: I do research on LLM reasoning, reinforcement learning, and AI safety.
   - title: Research intern
